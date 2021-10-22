@@ -48,6 +48,7 @@ const ThemeHandler = () => {
           onClick={theme === "dark" ? toLight : toDark}
         >
           <Switch
+            as="div"
             checked={enabled}
             onChange={setEnabled}
             className={`${
