@@ -32,3 +32,11 @@ a {
 ::-webkit-scrollbar-thumb:hover {
   @apply bg-gray-600 dark:bg-gray-400;
 }
+
+/* SELECTION */
+::selection {
+  @apply bg-red-500 text-white; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  @apply bg-red-500 text-white; /* Gecko Browsers */
+}

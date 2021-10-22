@@ -52,7 +52,7 @@ const ThemeHandler = () => {
             checked={enabled}
             onChange={setEnabled}
             className={`${
-              enabled ? "bg-blue-600" : "bg-gray-300"
+              enabled ? "bg-blue-600" : "bg-gray-400"
             } relative inline-flex items-center h-6 rounded-full w-11 transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500`}
           >
             <span

@@ -8,9 +8,11 @@ const Section2nd = () => {
       />
       <div className="sec-container h-full relative">
         <div className="flex justify-center items-center h-full">
-          <h1 className="font-bold text-4xl text-white tracking-widest">
-            Section 2nd
-          </h1>
+          <div className="w-96 h-56 flex justify-center items-center dark:bg-gray-600 bg-gray-400 bg-opacity-50 dark:bg-opacity-50 rounded-2xl">
+            <h1 className="font-bold text-4xl text-gray-100 tracking-widest">
+              Section 2nd
+            </h1>
+          </div>
         </div>
       </div>
     </section>
