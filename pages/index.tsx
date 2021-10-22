@@ -1,8 +1,8 @@
 import type { NextPage } from "next";
-import Head from "next/head";
 import { useEffect, useState } from "react";
 import { Switch } from "@headlessui/react";
 import { MoonIcon, SunIcon } from "@heroicons/react/outline";
+import Section2nd from "../components/Home/Section2nd";
 
 const Home: NextPage = () => {
   const [theme, setTheme] = useState("light");
@@ -45,12 +45,6 @@ const Home: NextPage = () => {
 
   return (
     <>
-      <Head>
-        <title>William S L</title>
-        <meta name="description" content="William Suarez Lumbantobing" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
       <main className="h-full bg-gray-100 dark:bg-gray-900">
         <div className="flex flex-col justify-center items-center h-full">
           <div className="">
@@ -100,7 +94,7 @@ const Home: NextPage = () => {
                 <button
                   type="button"
                   onClick={enabled ? toLight : toDark}
-                  className="bg-blue-200 hover:bg-blue-400 text-gray-900 font-bold duration-300 px-2 py-1"
+                  className="bg-blue-200 hover:bg-blue-400 text-gray-900 font-bold rounded duration-300 px-2 py-1"
                 >
                   CHANGE
                 </button>
@@ -109,6 +103,7 @@ const Home: NextPage = () => {
           </div>
         </div>
       </main>
+      <Section2nd />
     </>
   );
 };
