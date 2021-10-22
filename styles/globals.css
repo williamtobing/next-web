@@ -13,7 +13,7 @@ a {
 }
 
 .sec-container {
-  @apply max-w-screen-xl mx-auto px-4;
+  @apply max-w-screen-xl mx-auto sm:px-4;
 }
 
 /* SCROLL BAR */
