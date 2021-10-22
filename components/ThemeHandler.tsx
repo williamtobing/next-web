@@ -44,14 +44,15 @@ const ThemeHandler = () => {
     <Switch.Group>
       <div className="flex flex-wrap items-center ml-1">
         <div
-          className="rounded-full"
+          className="rounded-full cursor-pointer"
           onClick={theme === "dark" ? toLight : toDark}
         >
           <Switch
+            as="div"
             checked={enabled}
             onChange={setEnabled}
             className={`${
-              enabled ? "bg-blue-600" : "bg-gray-200"
+              enabled ? "bg-blue-600" : "bg-gray-300"
             } relative inline-flex items-center h-6 rounded-full w-11 transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500`}
           >
             <span
