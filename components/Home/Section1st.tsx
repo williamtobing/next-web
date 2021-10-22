@@ -10,7 +10,7 @@ const Section1st = () => {
           <p className="text-6xl font-bold tracking-widest text-gray-900 dark:text-gray-100">
             William Suarez
           </p>
-          <p className="text-lg text-blue-400 font-bold italic tracking-wide ml-1 mb-2">
+          <p className="text-lg text-blue-600 dark:text-blue-400 font-bold italic tracking-wide ml-1 mb-2">
             Lumbantobing
           </p>
           <div className="flex sm:block justify-center items-center">
