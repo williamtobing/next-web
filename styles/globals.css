@@ -35,8 +35,8 @@ a {
 
 /* SELECTION */
 ::selection {
-  @apply bg-red-500 text-white; /* WebKit/Blink Browsers */
+  @apply bg-red-600 text-white; /* WebKit/Blink Browsers */
 }
 ::-moz-selection {
-  @apply bg-red-500 text-white; /* Gecko Browsers */
+  @apply bg-red-600 text-white; /* Gecko Browsers */
 }
