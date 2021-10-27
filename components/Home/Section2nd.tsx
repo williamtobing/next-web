@@ -1,6 +1,6 @@
 const Section2nd = () => {
   return (
-    <section className="relative h-full hidden">
+    <section className="relative h-full">
       <img
         src="https://web-busol.s3.ap-southeast-1.amazonaws.com/temp/Content_auto_x2.webp"
         alt="banner background"

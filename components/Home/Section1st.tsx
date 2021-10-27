@@ -32,7 +32,7 @@ const Section1st = () => {
           <p className="bg-gray-900 text-gray-100 sm:text-right uppercase sm:rounded-md px-4 py-2 my-2 font-bold sm:ml-1">
             #111827
           </p>
-          <div className="flex justify-center mt-4 animate-pulse">
+          {/* <div className="flex justify-center mt-4 animate-pulse">
             <BeakerIcon className="h-6 w-6 mx-2 text-gray-900 dark:text-gray-100" />
             <p className="text-gray-900 dark:text-gray-100 tracking-widest dark">
               UNDER DEVELOPMENT
@@ -49,16 +49,16 @@ const Section1st = () => {
             >
               williamtobing.github.io
             </a>
-          </div>
+          </div> */}
         </div>
       </div>
-      {/* <div className="absolute bottom-4 w-full flex justify-center items-center animate-pulse">
+      <div className="absolute bottom-4 w-full flex justify-center items-center animate-pulse">
         <BeakerIcon className="h-6 w-6 mx-2 text-gray-900 dark:text-gray-100" />
         <p className="text-gray-900 dark:text-gray-100 tracking-widest dark">
           UNDER DEVELOPMENT
         </p>
         <BeakerIcon className="h-6 w-6 mx-2 text-gray-900 dark:text-gray-100" />
-      </div> */}
+      </div>
     </section>
   );
 };
