@@ -12,6 +12,7 @@ const Section1st = () => {
         style={{ backgroundImage: `url("${bgSVG}")` }}
         className="absolute w-1/12 sm:w-2/12 h-screen bg-gray-200 dark:bg-gray-800"
       />
+
       <div className="sec-container flex flex-col justify-center items-center h-full relative">
         <div className="text-center sm:text-left">
           <p className="text-6xl font-bold tracking-widest text-gray-900 dark:text-gray-100">
@@ -32,14 +33,14 @@ const Section1st = () => {
           <p className="bg-gray-900 text-gray-100 sm:text-right uppercase sm:rounded-md px-4 py-2 my-2 font-bold sm:ml-1">
             #111827
           </p>
-          {/* <div className="flex justify-center mt-4 animate-pulse">
+          <div className="flex justify-center mt-4 animate-pulse invisible">
             <BeakerIcon className="h-6 w-6 mx-2 text-gray-900 dark:text-gray-100" />
             <p className="text-gray-900 dark:text-gray-100 tracking-widest dark">
               UNDER DEVELOPMENT
             </p>
             <BeakerIcon className="h-6 w-6 mx-2 text-gray-900 dark:text-gray-100" />
           </div>
-          <div className="flex flex-col items-center">
+          <div className="flex flex-col items-center invisible">
             <p className="text-gray-900 dark:text-gray-100 tracking-wider dark">
               Please refer to the following site.
             </p>
@@ -49,15 +50,29 @@ const Section1st = () => {
             >
               williamtobing.github.io
             </a>
-          </div> */}
+          </div>
         </div>
       </div>
-      <div className="absolute bottom-4 w-full flex justify-center items-center animate-pulse">
-        <BeakerIcon className="h-6 w-6 mx-2 text-gray-900 dark:text-gray-100" />
-        <p className="text-gray-900 dark:text-gray-100 tracking-widest dark">
-          UNDER DEVELOPMENT
-        </p>
-        <BeakerIcon className="h-6 w-6 mx-2 text-gray-900 dark:text-gray-100" />
+
+      <div className="absolute bottom-4 w-full flex flex-col">
+        <div className="flex justify-center animate-pulse">
+          <BeakerIcon className="h-6 w-6 mx-2 text-gray-900 dark:text-gray-100" />
+          <p className="text-gray-900 dark:text-gray-100 tracking-widest dark">
+            UNDER DEVELOPMENT
+          </p>
+          <BeakerIcon className="h-6 w-6 mx-2 text-gray-900 dark:text-gray-100" />
+        </div>
+        <div className="flex flex-col items-center">
+          <p className="text-gray-900 dark:text-gray-100 tracking-wider dark">
+            Please refer to the following site.
+          </p>
+          <a
+            className="tracking-wider text-red-500 hover:text-red-600 hover:underline font-bold"
+            href="https://williamtobing.github.io/"
+          >
+            williamtobing.github.io
+          </a>
+        </div>
       </div>
     </section>
   );

@@ -20,8 +20,15 @@ const Meta = ({ title, description, keywords, author }: metaProps) => {
       />
       <meta name="keywords" content={keywords} />
       <meta name="author" content={author} />
-      <meta name="image" property="og:image" content="/favicon.ico" />
-      <link rel="icon" href="/favicon.ico" />
+      <meta
+        name="image"
+        property="og:image"
+        content="https://res.cloudinary.com/dox0nkwax/image/upload/v1635608705/logo/william12kx_zc1a8m.png"
+      />
+      <link
+        rel="icon"
+        href="https://res.cloudinary.com/dox0nkwax/image/upload/v1635603694/logo/gray/Logo_mine_002_woeqa7.svg"
+      />
       <title>{title}</title>
     </Head>
   );

@@ -8,10 +8,12 @@ const Section2nd = () => {
       />
       <div className="sec-container h-full relative">
         <div className="flex justify-center items-center h-full">
-          <div className="w-96 h-56 flex justify-center items-center dark:bg-gray-600 bg-gray-400 bg-opacity-50 dark:bg-opacity-50 rounded-2xl">
-            <h1 className="font-bold text-4xl text-gray-100 tracking-widest">
-              Section 2nd
-            </h1>
+          <div className="flex justify-center items-center dark:bg-gray-600 bg-gray-400 bg-opacity-50 dark:bg-opacity-50 rounded-2xl p-4">
+            <img
+              src="https://res.cloudinary.com/dox0nkwax/image/upload/v1635608705/logo/william12kx_zc1a8m.png"
+              alt="logo"
+              className="w-80 h-auto rounded-xl"
+            />
           </div>
         </div>
       </div>
