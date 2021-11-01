@@ -53,15 +53,22 @@ const ThemeHandler = () => {
             onChange={setEnabled}
             className={`${
               enabled ? "bg-red-500" : "bg-gray-400"
-            } relative inline-flex items-center h-6 rounded-full w-11 transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-400`}
+            } relative inline-flex items-center h-7 rounded-full w-14 transition-colors focus:outline-none`}
           >
             <span
               className={`${
-                enabled ? "translate-x-6" : "translate-x-1"
-              } inline-block w-4 h-4 transform bg-white rounded-full transition-transform`}
+                enabled ? "translate-x-8" : "translate-x-1"
+              } inline-block w-5 h-5 transform bg-white rounded-full transition-transform`}
             />
             <span className="hidden">THEME</span>
           </Switch>
+        </div>
+        <div
+          onClick={enabled ? toLight : toDark}
+          title={enabled ? "Light Mode" : "Dark Mode"}
+          className="w-7 h-7 bg-gray-800 dark:bg-gray-200 hover:bg-gray-900 dark:hover:bg-gray-100 border-2 border-gray-800 dark:border-gray-200 hover:border-gray-900 dark:hover:border-gray-100 rounded-full shadow-lg overflow-hidden cursor-pointer ml-2"
+        >
+          <div className="w-1/2 h-full bg-gray-200 dark:bg-gray-800" />
         </div>
       </div>
     </Switch.Group>

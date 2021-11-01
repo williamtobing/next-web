@@ -27,10 +27,10 @@ const Section1st = () => {
           <p className="bg-red-500 text-gray-100 sm:text-right uppercase sm:rounded-md px-4 py-2 my-2 font-bold sm:ml-1">
             #ef4444
           </p>
-          <p className="bg-gray-800 text-gray-100 sm:text-right uppercase sm:rounded-md px-4 py-2 my-2 font-bold sm:ml-1">
+          <p className="bg-gray-800 dark:bg-gray-200 text-gray-100 dark:text-gray-900 sm:text-right uppercase sm:rounded-md px-4 py-2 my-2 font-bold sm:ml-1">
             #1f2937
           </p>
-          <p className="bg-gray-900 text-gray-100 sm:text-right uppercase sm:rounded-md px-4 py-2 my-2 font-bold sm:ml-1">
+          <p className="bg-gray-900 dark:bg-gray-100 text-gray-100 dark:text-gray-900 sm:text-right uppercase sm:rounded-md px-4 py-2 my-2 font-bold sm:ml-1">
             #111827
           </p>
           <div className="flex justify-center mt-4 animate-pulse invisible">
