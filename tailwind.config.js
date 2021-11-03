@@ -6,6 +6,9 @@ module.exports = {
       screens: {
         print: { raw: "print" },
       },
+      fontFamily: {
+        ubuntu: "'Ubuntu', sans-serif",
+      },
     },
   },
   variants: {

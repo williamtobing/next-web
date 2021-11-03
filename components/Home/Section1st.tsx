@@ -15,7 +15,7 @@ const Section1st = () => {
 
       <div className="sec-container flex flex-col justify-center items-center h-full relative">
         <div className="text-center sm:text-left">
-          <p className="text-6xl font-bold tracking-widest text-gray-900 dark:text-gray-100">
+          <p className="text-6xl font-bold tracking-widest d-text">
             William Suarez
           </p>
           <p className="text-lg text-red-500 font-bold italic tracking-wide sm:ml-1 mb-2">
@@ -34,14 +34,12 @@ const Section1st = () => {
             #111827
           </p>
           <div className="flex justify-center mt-4 animate-pulse invisible">
-            <BeakerIcon className="h-6 w-6 mx-2 text-gray-900 dark:text-gray-100" />
-            <p className="text-gray-900 dark:text-gray-100 tracking-widest dark">
-              UNDER DEVELOPMENT
-            </p>
-            <BeakerIcon className="h-6 w-6 mx-2 text-gray-900 dark:text-gray-100" />
+            <BeakerIcon className="h-6 w-6 mx-2 d-text" />
+            <p className="d-text tracking-widest dark">UNDER DEVELOPMENT</p>
+            <BeakerIcon className="h-6 w-6 mx-2 d-text" />
           </div>
           <div className="flex flex-col items-center invisible">
-            <p className="text-gray-900 dark:text-gray-100 tracking-wider dark">
+            <p className="d-text tracking-wider dark">
               Please refer to the following site.
             </p>
             <a
@@ -56,14 +54,12 @@ const Section1st = () => {
 
       <div className="absolute bottom-4 w-full flex flex-col">
         <div className="flex justify-center animate-pulse">
-          <BeakerIcon className="h-6 w-6 mx-2 text-gray-900 dark:text-gray-100" />
-          <p className="text-gray-900 dark:text-gray-100 tracking-widest dark">
-            UNDER DEVELOPMENT
-          </p>
-          <BeakerIcon className="h-6 w-6 mx-2 text-gray-900 dark:text-gray-100" />
+          <BeakerIcon className="h-6 w-6 mx-2 d-text" />
+          <p className="d-text tracking-widest dark">UNDER DEVELOPMENT</p>
+          <BeakerIcon className="h-6 w-6 mx-2 d-text" />
         </div>
         <div className="flex flex-col items-center">
-          <p className="text-gray-900 dark:text-gray-100 tracking-wider dark">
+          <p className="d-text tracking-wider dark">
             Please refer to the following site.
           </p>
           <a
