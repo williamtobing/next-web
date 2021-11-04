@@ -42,7 +42,7 @@ const ThemeHandler = () => {
 
   return (
     <Switch.Group>
-      <div className="flex flex-wrap items-center sm:ml-1">
+      <div className="flex items-center sm:ml-1">
         <div
           className="rounded-full cursor-pointer"
           onClick={theme === "dark" ? toLight : toDark}
