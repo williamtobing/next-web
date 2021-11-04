@@ -39,7 +39,7 @@
   }
 
   /* TEMP SCROLL BAR */
-  ::-webkit-scrollbar {
+  /* ::-webkit-scrollbar {
     @apply w-3;
   }
 
@@ -53,10 +53,10 @@
 
   ::-webkit-scrollbar-thumb:hover {
     @apply bg-gray-400;
-  }
+  } */
 
   /* SCROLL BAR */
-  /* ::-webkit-scrollbar {
+  ::-webkit-scrollbar {
     @apply w-3;
   }
 
@@ -70,7 +70,7 @@
 
   ::-webkit-scrollbar-thumb:hover {
     @apply bg-gray-600 dark:bg-gray-400;
-  } */
+  }
 
   /* SELECTION */
   ::selection {
