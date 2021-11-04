@@ -21,6 +21,7 @@ const TempSec2nd = () => {
                 <a
                   href="https://nextjs.org/"
                   target="_blank"
+                  rel="noopener noreferrer"
                   className="d-text-reverse hover:text-red-600 text-2xl font-bold text-center duration-300"
                 >
                   NEXT.js
@@ -39,6 +40,7 @@ const TempSec2nd = () => {
                 <a
                   href="https://reactjs.org/"
                   target="_blank"
+                  rel="noopener noreferrer"
                   className="d-text-reverse hover:text-red-600 text-2xl font-bold text-center duration-300"
                 >
                   React.js
@@ -60,6 +62,7 @@ const TempSec2nd = () => {
                 <a
                   href="https://www.typescriptlang.org/"
                   target="_blank"
+                  rel="noopener noreferrer"
                   className="d-text-reverse hover:text-red-600 text-2xl font-bold text-center duration-300"
                 >
                   TypeScript
@@ -78,6 +81,7 @@ const TempSec2nd = () => {
                 <a
                   href="https://tailwindcss.com/"
                   target="_blank"
+                  rel="noopener noreferrer"
                   className="d-text-reverse hover:text-red-600 text-2xl font-bold text-center duration-300"
                 >
                   Taildwind CSS

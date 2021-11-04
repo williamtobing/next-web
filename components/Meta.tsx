@@ -41,7 +41,7 @@ const Meta = ({ title, description, keywords, author }: metaProps) => {
         crossOrigin="anonymous"
       />
       <link
-        href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&amp;display=swap"
+        href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap"
         rel="stylesheet"
       />
       <title>{title}</title>

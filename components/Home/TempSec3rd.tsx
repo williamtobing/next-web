@@ -26,6 +26,7 @@ const TempSec3rd = () => {
               className="tracking-wider text-red-600 hover:text-red-700 hover:underline font-bold"
               href="https://williamtobing.github.io/"
               target="_blank"
+              rel="noopener noreferrer"
             >
               williamtobing.github.io
             </a>
