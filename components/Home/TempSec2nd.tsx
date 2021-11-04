@@ -19,7 +19,11 @@ const TempSec2nd = () => {
           <h1 className="text-gray-100 text-2xl font-bold font-ubuntu ml-1">
             Current Project:{" "}
             <span className="text-red-600 italic hover:underline">
-              <a href="https://www.xlaxiata.co.id/bisnis/" target="_blank">
+              <a
+                href="https://www.xlaxiata.co.id/bisnis/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 XL Axiata Business Solutioins
               </a>
             </span>
