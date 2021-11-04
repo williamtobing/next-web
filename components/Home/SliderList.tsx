@@ -1,4 +1,5 @@
 import { useState } from "react";
+
 import SliderItem from "./SliderItem";
 import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/outline";
 
