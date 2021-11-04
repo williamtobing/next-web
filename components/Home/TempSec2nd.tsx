@@ -6,7 +6,7 @@ const TempSec2nd = () => {
   const [bgSVG] = useState(useCircuitSVG("1F2937"));
 
   return (
-    <section className="relative bg-gray-900 h-screen">
+    <section className="relative bg-gray-900 xl:min-h-screen">
       <div className="flex justify-end z-0">
         <div
           style={{ backgroundImage: `url("${bgSVG}")` }}
@@ -14,11 +14,12 @@ const TempSec2nd = () => {
         />
       </div>
 
-      <div className="sec-container min-h-screen">
-        <div className="flex flex-col justify-center min-h-screen">
+      <div className="sec-container my-12 xl:my-0 xl:min-h-screen">
+        <div className="flex flex-col justify-center xl:min-h-screen">
           <h1 className="text-gray-100 text-2xl font-bold font-ubuntu ml-1">
             Current Project:{" "}
             <span className="text-red-600 italic hover:underline">
+              <br className="sm:hidden" />
               <a
                 href="https://www.xlaxiata.co.id/bisnis/"
                 target="_blank"

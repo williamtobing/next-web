@@ -23,7 +23,7 @@ const TempSec3rd = () => {
               For more details, please refer to my previous site.
             </p>
             <a
-              className="tracking-wider text-red-600 hover:text-red-700 hover:underline font-bold"
+              className="xs:text-xl tracking-wider text-red-600 hover:text-red-700 hover:underline font-bold"
               href="https://williamtobing.github.io/"
               target="_blank"
               rel="noopener noreferrer"
