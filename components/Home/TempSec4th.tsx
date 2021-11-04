@@ -1,6 +1,6 @@
 const TempSec2nd = () => {
   return (
-    <section className="md:h-full bg-gray-900">
+    <section className="md:h-screen bg-gray-900">
       <div className="sec-container h-full">
         <div className="flex flex-col justify-center items-center h-full">
           <div className="my-8 md:mt-0 md:mb-16">

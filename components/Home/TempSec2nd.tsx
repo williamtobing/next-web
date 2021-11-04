@@ -6,7 +6,7 @@ const TempSec2nd = () => {
   const [bgSVG] = useState(useCircuitSVG("1F2937"));
 
   return (
-    <section className="relative bg-gray-900 min-h-screen">
+    <section className="relative bg-gray-900 h-screen">
       <div className="flex justify-end z-0">
         <div
           style={{ backgroundImage: `url("${bgSVG}")` }}
