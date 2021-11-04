@@ -2,41 +2,79 @@
 @tailwind components;
 @tailwind utilities;
 
-html,
-body,
-#__next {
-  @apply h-full;
-}
+@layer base {
+  html,
+  body,
+  #__next {
+    @apply h-full;
+  }
 
-a {
-  @apply no-underline;
-}
+  body {
+    @apply bg-gray-900;
+  }
 
-.sec-container {
-  @apply max-w-screen-xl mx-auto sm:px-4;
-}
+  a {
+    @apply no-underline;
+  }
 
-/* SCROLL BAR */
-::-webkit-scrollbar {
-  @apply w-3;
-}
+  p,
+  a,
+  li,
+  span {
+    @apply font-ubuntu;
+  }
 
-::-webkit-scrollbar-track {
-  @apply bg-gray-200 dark:bg-gray-800;
-}
+  .sec-container {
+    @apply max-w-screen-xl mx-auto sm:px-4;
+  }
 
-::-webkit-scrollbar-thumb {
-  @apply bg-gray-400 dark:bg-gray-600;
-}
+  .d-text {
+    @apply text-gray-900 dark:text-gray-100;
+  }
 
-::-webkit-scrollbar-thumb:hover {
-  @apply bg-gray-600 dark:bg-gray-400;
-}
+  .d-text-reverse {
+    @apply text-gray-100 dark:text-gray-900;
+  }
 
-/* SELECTION */
-::selection {
-  @apply bg-red-600 text-white; /* WebKit/Blink Browsers */
-}
-::-moz-selection {
-  @apply bg-red-600 text-white; /* Gecko Browsers */
+  /* TEMP SCROLL BAR */
+  ::-webkit-scrollbar {
+    @apply w-3;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-gray-800;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-gray-600;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-gray-400;
+  }
+
+  /* SCROLL BAR */
+  /* ::-webkit-scrollbar {
+    @apply w-3;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-gray-200 dark:bg-gray-800;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-gray-400 dark:bg-gray-600;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-gray-600 dark:bg-gray-400;
+  } */
+
+  /* SELECTION */
+  ::selection {
+    @apply bg-red-600 text-white; /* WebKit/Blink Browsers */
+  }
+  ::-moz-selection {
+    @apply bg-red-600 text-white; /* Gecko Browsers */
+  }
 }
