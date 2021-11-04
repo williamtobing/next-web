@@ -29,11 +29,11 @@ const TempSec2nd = () => {
               </div>
             </div>
             <div className="mx-2 mb-8 md:mb-0 2xl:mx-8">
-              <div className="bg-gray-200 border-8 border-gray-400 rounded-full overflow-hidden">
+              <div className="bg-gray-200 border-8 border-gray-400 rounded-full overflow-hidden hover:animate-spin-slow">
                 <img
                   src="https://res.cloudinary.com/dox0nkwax/image/upload/v1636000856/logo/stack%20logo/react_ura0hq.webp"
                   alt="react logo"
-                  className="w-48 h-full hover:animate-spin-slow"
+                  className="w-48 h-full transform scale-95"
                 />
               </div>
               <div className="flex justify-center items-center mt-4">
