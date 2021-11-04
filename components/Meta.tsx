@@ -1,4 +1,5 @@
 import Head from "next/head";
+import { useEffect } from "react";
 
 type metaProps = {
   title?: string;
@@ -8,6 +9,10 @@ type metaProps = {
 };
 
 const Meta = ({ title, description, keywords, author }: metaProps) => {
+  useEffect(() => {
+    document.documentElement.lang = navigator.language;
+  }, []);
+
   return (
     <Head>
       <meta charSet="utf-8" />

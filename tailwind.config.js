@@ -13,11 +13,18 @@ module.exports = {
       animation: {
         "spin-slow": "spin 3s linear infinite",
       },
+      spacing: {
+        v360p: "40rem",
+        h360p: "22.5rem",
+        vhd: "80rem",
+        hhd: "45rem",
+      },
     },
   },
   variants: {
     extend: {
       animation: ["hover", "focus"],
+      filter: ["hover", "focus"],
     },
   },
   plugins: [],
