@@ -4,15 +4,21 @@ module.exports = {
   theme: {
     extend: {
       screens: {
+        xs: "500px",
         print: { raw: "print" },
       },
       fontFamily: {
         ubuntu: "'Ubuntu', sans-serif",
       },
+      animation: {
+        "spin-slow": "spin 3s linear infinite",
+      },
     },
   },
   variants: {
-    extend: {},
+    extend: {
+      animation: ["hover", "focus"],
+    },
   },
   plugins: [],
 };

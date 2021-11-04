@@ -1,7 +1,7 @@
-import { BeakerIcon } from "@heroicons/react/outline";
 import { useState } from "react";
-import ThemeHandler from "../ThemeHandler";
+import { BeakerIcon } from "@heroicons/react/outline";
 import { useCircuitSVG } from "./data";
+import ThemeHandler from "../ThemeHandler";
 
 const Section1st = () => {
   const [bgSVG] = useState(useCircuitSVG("ef4444"));
@@ -39,7 +39,7 @@ const Section1st = () => {
             <BeakerIcon className="h-6 w-6 mx-2 d-text" />
           </div>
           <div className="flex flex-col items-center invisible">
-            <p className="d-text tracking-wider dark">
+            <p className="d-text tracking-wider">
               Please refer to the following site.
             </p>
             <a
