@@ -1,9 +1,11 @@
+import Image from "next/image";
+
 const Section3rd = () => {
   return (
     <section className="h-screen bg-gray-800">
       <div className="flex">
         <div className="w-1/2">
-          <img
+          <Image
             src="https://res.cloudinary.com/dox0nkwax/image/upload/v1635603717/logo/WILLIAM_002_tiacec.gif"
             alt="logo gif"
             className="h-screen w-full object-cover"

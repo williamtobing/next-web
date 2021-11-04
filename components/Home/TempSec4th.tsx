@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const TempSec2nd = () => {
   return (
     <section className="md:h-full bg-gray-900">
@@ -11,7 +13,7 @@ const TempSec2nd = () => {
           <div className="md:flex mb-12 md:mb-0">
             <div className="mx-2 mb-8 md:mb-0 2xl:mx-8">
               <div className="bg-gray-200 hover:bg-white duration-500 border-8 border-gray-400 rounded-full overflow-hidden">
-                <img
+                <Image
                   src="https://res.cloudinary.com/dox0nkwax/image/upload/v1636001626/logo/stack%20logo/next-js_felzgo.webp"
                   alt="next.js logo"
                   className="w-48 h-full transform hover:scale-125 duration-1000"
@@ -30,7 +32,7 @@ const TempSec2nd = () => {
             </div>
             <div className="mx-2 mb-8 md:mb-0 2xl:mx-8">
               <div className="bg-gray-200 border-8 border-gray-400 rounded-full overflow-hidden">
-                <img
+                <Image
                   src="https://res.cloudinary.com/dox0nkwax/image/upload/v1636000856/logo/stack%20logo/react_ura0hq.webp"
                   alt="react logo"
                   className="w-48 h-full hover:animate-spin-slow"
@@ -52,7 +54,7 @@ const TempSec2nd = () => {
                 style={{ backgroundColor: "#2d79c7" }}
                 className="border-8 border-gray-400 rounded-full overflow-hidden"
               >
-                <img
+                <Image
                   src="https://res.cloudinary.com/dox0nkwax/image/upload/v1636000856/logo/stack%20logo/typescript_ho8aqd.png"
                   alt="typescript logo"
                   className="w-48 h-full transform hover:-translate-x-3.5 hover:-translate-y-7 duration-1000"
@@ -71,7 +73,7 @@ const TempSec2nd = () => {
             </div>
             <div className="mx-2 mb-8 md:mb-0 2xl:mx-8">
               <div className="bg-gray-200 border-8 border-gray-400 rounded-full overflow-hidden">
-                <img
+                <Image
                   src="https://res.cloudinary.com/dox0nkwax/image/upload/v1636000856/logo/stack%20logo/tailwindcss_csi3ob.png"
                   alt="tailwindcss logo"
                   className="w-48 h-full transform scale-90 hover:scale-110 duration-1000"

@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Image from "next/image";
 import SliderItem from "./SliderItem";
 import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/outline";
 
@@ -112,7 +113,7 @@ const SliderList = () => {
         </div>
         <div className="flex">
           <div className="rounded-full bg-gray-100 border-2 border-gray-100 overflow-hidden mx-2">
-            <img
+            <Image
               title="Vue.js"
               src="https://res.cloudinary.com/dox0nkwax/image/upload/v1636027581/logo/stack%20logo/vue_kedlql.webp"
               alt="vue logo"
@@ -120,7 +121,7 @@ const SliderList = () => {
             />
           </div>
           <div className="rounded-full bg-gray-100 border-2 border-gray-100 overflow-hidden mx-2">
-            <img
+            <Image
               title="Laravel"
               src="https://res.cloudinary.com/dox0nkwax/image/upload/v1636027266/logo/stack%20logo/laravel_lmyz5m.webp"
               alt="laravel logo"
@@ -128,7 +129,7 @@ const SliderList = () => {
             />
           </div>
           <div className="rounded-full bg-gray-100 border-2 border-gray-100 overflow-hidden mx-2">
-            <img
+            <Image
               title="Inertia.js"
               src="https://res.cloudinary.com/dox0nkwax/image/upload/v1636027265/logo/stack%20logo/inertia-js_mav49q.png"
               alt="inertia logo"
@@ -137,7 +138,7 @@ const SliderList = () => {
           </div>
           <div className="rounded-full bg-gray-100 border-2 border-gray-100 overflow-hidden mx-2">
             {" "}
-            <img
+            <Image
               title="Taildwind CSS"
               src="https://res.cloudinary.com/dox0nkwax/image/upload/v1636000856/logo/stack%20logo/tailwindcss_csi3ob.png"
               alt="tailwindcss logo"
@@ -145,7 +146,7 @@ const SliderList = () => {
             />
           </div>
           <div className="rounded-full bg-gray-100 border-2 border-gray-100 overflow-hidden mx-2">
-            <img
+            <Image
               title="MySQL"
               src="https://res.cloudinary.com/dox0nkwax/image/upload/v1636027266/logo/stack%20logo/mysql_p2pgcs.webp"
               alt="mysql logo"
@@ -153,7 +154,7 @@ const SliderList = () => {
             />
           </div>
           <div className="rounded-full bg-gray-100 border-2 border-gray-100 overflow-hidden mx-2">
-            <img
+            <Image
               title="AWS"
               src="https://res.cloudinary.com/dox0nkwax/image/upload/v1636027266/logo/stack%20logo/aws_seykwd.webp"
               alt="aws logo"

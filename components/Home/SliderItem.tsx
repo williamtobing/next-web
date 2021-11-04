@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 type sliderProps = {
   imgUrl: string;
   name: string;
@@ -17,7 +19,7 @@ const SliderItem = ({ imgUrl, name, idx }: sliderProps) => {
         style={styleHandler()}
         className="relative mt-8 mr-4 flex-none duration-300 transform ease-in-out"
       >
-        <img
+        <Image
           src={imgUrl}
           alt="slider image"
           className="rounded-2xl w-v360p h-h360p object-cover filter grayscale contrast-125 hover:filter-none duration-500"
