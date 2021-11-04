@@ -1,6 +1,6 @@
 const TempSec1st = () => {
   return (
-    <section className="relative h-full z-0">
+    <section className="relative h-screen z-0">
       <img
         src="https://res.cloudinary.com/dox0nkwax/image/upload/v1636001040/logo/next-web/temp-bg_cf7wh8.webp"
         alt="banner background"

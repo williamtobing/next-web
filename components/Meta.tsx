@@ -34,16 +34,6 @@ const Meta = ({ title, description, keywords, author }: metaProps) => {
         rel="icon"
         href="https://res.cloudinary.com/dox0nkwax/image/upload/v1635603694/logo/gray/Logo_mine_002_woeqa7.svg"
       />
-      <link rel="preconnect" href="https://fonts.googleapis.com" />
-      <link
-        rel="preconnect"
-        href="https://fonts.gstatic.com"
-        crossOrigin="anonymous"
-      />
-      <link
-        href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&amp;display=swap"
-        rel="stylesheet"
-      />
       <title>{title}</title>
     </Head>
   );

@@ -5,7 +5,7 @@ const TempSec3rd = () => {
   const [bgSVG] = useState(useCircuitSVG("9CA3AF"));
 
   return (
-    <section className="relative bg-gray-900 h-1/2">
+    <section style={{ height: "50vh" }} className="relative bg-gray-900">
       <div className="flex z-0">
         <div
           style={{ backgroundImage: `url("${bgSVG}")` }}
@@ -26,6 +26,7 @@ const TempSec3rd = () => {
               className="tracking-wider text-red-600 hover:text-red-700 hover:underline font-bold"
               href="https://williamtobing.github.io/"
               target="_blank"
+              rel="noopener noreferrer"
             >
               williamtobing.github.io
             </a>
