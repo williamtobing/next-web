@@ -2,7 +2,7 @@ const TempSec1st = () => {
   return (
     <section className="relative h-screen z-0">
       <img
-        src="https://res.cloudinary.com/dox0nkwax/image/upload/v1636001040/logo/next-web/temp-bg_cf7wh8.webp"
+        src="https://res.cloudinary.com/dox0nkwax/image/upload/v1636078677/logo/next-web/temp-bg-nerf_pdl9ns.webp"
         alt="banner background"
         className="absolute h-screen object-cover filter grayscale contrast-150"
       />
