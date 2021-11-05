@@ -5,6 +5,7 @@ export const useCircuitSVG = (color: string) => {
 type Projects = {
   id: number;
   imgUrl: string;
+  imgMobileUrl: string;
   name: string;
 }[];
 
@@ -13,48 +14,64 @@ export const useProjects: Projects = [
     id: 1,
     imgUrl:
       "https://res.cloudinary.com/dox0nkwax/image/upload/v1636012072/logo/project/web-busol/homepage_zlypgq.webp",
+    imgMobileUrl:
+      "https://res.cloudinary.com/dox0nkwax/image/upload/v1636078338/logo/project/web-busol/mobile/m-homepage_cxgnvj.webp",
     name: "homepage",
   },
   {
     id: 2,
     imgUrl:
       "https://res.cloudinary.com/dox0nkwax/image/upload/v1636012073/logo/project/web-busol/product-page_mmqwp1.webp",
+    imgMobileUrl:
+      "https://res.cloudinary.com/dox0nkwax/image/upload/v1636078339/logo/project/web-busol/mobile/m-product-page_pnpzq9.webp",
     name: "product page",
   },
   {
     id: 3,
     imgUrl:
       "https://res.cloudinary.com/dox0nkwax/image/upload/v1636012074/logo/project/web-busol/promo-page_l4lm9j.webp",
+    imgMobileUrl:
+      "https://res.cloudinary.com/dox0nkwax/image/upload/v1636078338/logo/project/web-busol/mobile/m-promo-page_dulfbg.webp",
     name: "promo page",
   },
   {
     id: 4,
     imgUrl:
       "https://res.cloudinary.com/dox0nkwax/image/upload/v1636012069/logo/project/web-busol/login_qcxkaq.webp",
+    imgMobileUrl:
+      "https://res.cloudinary.com/dox0nkwax/image/upload/v1636078337/logo/project/web-busol/mobile/m-login_xgwggk.webp",
     name: "cms",
   },
   {
     id: 5,
     imgUrl:
       "https://res.cloudinary.com/dox0nkwax/image/upload/v1636012069/logo/project/web-busol/admin-dashboard_k5nlhw.webp",
+    imgMobileUrl:
+      "https://res.cloudinary.com/dox0nkwax/image/upload/v1636078337/logo/project/web-busol/mobile/m-admin-dashboard_yyptkw.webp",
     name: "dashboard",
   },
   {
     id: 6,
     imgUrl:
-      "https://res.cloudinary.com/dox0nkwax/image/upload/v1636012070/logo/project/web-busol/admin-profile_pgzicp.webp",
+      "https://res.cloudinary.com/dox0nkwax/image/upload/v1636077896/logo/project/web-busol/admin-profile_r8fwpu.webp",
+    imgMobileUrl:
+      "https://res.cloudinary.com/dox0nkwax/image/upload/v1636078337/logo/project/web-busol/mobile/m-admin-profile_hqnucz.webp",
     name: "admin profile",
   },
   {
     id: 7,
     imgUrl:
       "https://res.cloudinary.com/dox0nkwax/image/upload/v1636012071/logo/project/web-busol/admin-layout_b4ptns.webp",
+    imgMobileUrl:
+      "https://res.cloudinary.com/dox0nkwax/image/upload/v1636078337/logo/project/web-busol/mobile/m-admin-layout_xwgqfu.webp",
     name: "admin customization",
   },
   {
     id: 8,
     imgUrl:
       "https://res.cloudinary.com/dox0nkwax/image/upload/v1636012070/logo/project/web-busol/admin-homepage_zvnzgz.webp",
+    imgMobileUrl:
+      "https://res.cloudinary.com/dox0nkwax/image/upload/v1636078338/logo/project/web-busol/mobile/m-admin-homepage_bicdbt.webp",
     name: "homepage customization",
   },
 ];

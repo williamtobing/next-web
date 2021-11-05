@@ -30,6 +30,7 @@ const SliderList = () => {
               key={project.id}
               name={project.name}
               imgUrl={project.imgUrl}
+              imgMobileUrl={project.imgMobileUrl}
               idx={idx}
             />
           ))}
