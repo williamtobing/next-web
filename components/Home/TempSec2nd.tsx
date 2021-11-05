@@ -16,7 +16,7 @@ const TempSec2nd = () => {
 
       <div className="sec-container my-12 xl:my-0 xl:min-h-screen">
         <div className="flex flex-col justify-center xl:min-h-screen">
-          <h1 className="text-gray-100 text-2xl font-bold font-ubuntu ml-1">
+          <h1 className="text-gray-100 text-2xl font-bold font-ubuntu ml-2 md:ml-1">
             Current Project:{" "}
             <span className="text-red-600 italic hover:underline">
               <br className="sm:hidden" />
