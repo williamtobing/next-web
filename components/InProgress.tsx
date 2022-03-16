@@ -6,7 +6,8 @@ const InProgress = () => {
       <div className="flex justify-center md:justify-end animate-pulse">
         <BeakerIcon className="h-6 w-6 mx-2 d-text-reverse" />
         <p className="d-text-reverse text-sm md:text-base font-bold tracking-widest">
-          UNDER DEVELOPMENT
+          {/* UNDER DEVELOPMENT */}
+          Too lazy to continue :)
         </p>
         <BeakerIcon className="h-6 w-6 mx-2 d-text-reverse" />
       </div>

@@ -25,7 +25,7 @@ const TempSec2nd = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                XL Axiata Business Solutioins
+                XL Axiata Business Solutions
               </a>
             </span>
           </h1>

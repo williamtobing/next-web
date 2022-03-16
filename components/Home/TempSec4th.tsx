@@ -84,7 +84,7 @@ const TempSec2nd = () => {
                   rel="noopener noreferrer"
                   className="d-text-reverse hover:text-red-600 text-2xl font-bold text-center duration-300"
                 >
-                  Taildwind CSS
+                  Tailwind CSS
                 </a>
               </div>
             </div>
