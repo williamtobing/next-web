@@ -7,7 +7,7 @@ const InProgress = () => {
         <BeakerIcon className="h-6 w-6 mx-2 d-text-reverse" />
         <p className="d-text-reverse text-sm md:text-base font-bold tracking-widest">
           {/* UNDER DEVELOPMENT */}
-          Too lazy to continue :)
+          Revamp in progress
         </p>
         <BeakerIcon className="h-6 w-6 mx-2 d-text-reverse" />
       </div>

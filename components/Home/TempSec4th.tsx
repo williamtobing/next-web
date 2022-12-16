@@ -1,10 +1,10 @@
 const TempSec2nd = () => {
   return (
-    <section className="md:h-screen bg-gray-900">
+    <section className="md:h-screen bg-gray-200">
       <div className="sec-container h-full">
         <div className="flex flex-col justify-center items-center h-full">
           <div className="my-8 md:mt-0 md:mb-16">
-            <h1 className="text-gray-100 text-xl md:text-4xl text-center font-bold font-ubuntu uppercase">
+            <h1 className="text-gray-800 text-xl md:text-4xl text-center font-bold font-ubuntu uppercase">
               This site was developed with
             </h1>
           </div>

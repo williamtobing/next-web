@@ -1,11 +1,11 @@
 const TempSec1st = () => {
   return (
-    <section className="relative h-screen z-0">
-      <img
+    <section className="relative h-screen bg-gray-300 z-0">
+      {/* <img
         src="https://res.cloudinary.com/dox0nkwax/image/upload/v1636078677/logo/next-web/temp-bg-nerf_pdl9ns.webp"
         alt="banner background"
         className="absolute h-screen object-cover filter grayscale contrast-150"
-      />
+      /> */}
       <div className="sec-container h-full relative">
         <div className="flex justify-center items-center h-full">
           <div className="flex justify-center items-center dark:bg-gray-600 bg-gray-400 bg-opacity-70 dark:bg-opacity-70 rounded-full p-4">
