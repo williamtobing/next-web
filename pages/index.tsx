@@ -1,12 +1,12 @@
 import type { NextPage } from "next";
-import TempSec1st from "../components/Home/TempSec1st";
-import TempSec4th from "../components/Home/TempSec4th";
+import "twin.macro";
 
 const Home: NextPage = () => {
   return (
     <>
-      <TempSec1st />
-      <TempSec4th />
+      <p tw="text-3xl font-extrabold">Hi there,</p>
+      <p tw="text-4xl font-bold">I am William</p>
+      <p tw="text-2xl font-semibold italic">Software Engineer</p>
     </>
   );
 };

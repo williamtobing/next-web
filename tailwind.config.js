@@ -8,7 +8,17 @@ module.exports = {
         print: { raw: "print" },
       },
       fontFamily: {
-        ubuntu: "'Ubuntu', sans-serif",
+        jakarta: "'Plus Jakarta Sans', sans-serif",
+      },
+      colors: {
+        "my-white": "#EAEEFF",
+        portage: "#879BE8",
+        chalky: "#E8D487",
+        "gray-chateau": "#98A0A8",
+        "bright-gray": "#424756",
+        "dark-gunmetal": "#182730",
+        mirage: "#1C2030",
+        bunker: "#101820",
       },
       animation: {
         "spin-slow": "spin 3s linear infinite",
