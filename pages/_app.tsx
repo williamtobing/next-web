@@ -1,18 +1,18 @@
-import type { AppProps } from "next/app";
-import { cache } from "@emotion/css";
-import { CacheProvider } from "@emotion/react";
-import GlobalStyles from "styles/Global.style";
-import "styles/Global.style.css";
+import type {AppProps} from 'next/app';
+import {cache} from '@emotion/css';
+import {CacheProvider} from '@emotion/react';
+import GlobalStyles from 'styles/Global.style';
+import 'styles/Global.style.css';
 
-import Layout from "components/Layout";
+import BaseLayout from 'components/BaseLayout';
 
-function MyApp({ Component, pageProps }: AppProps) {
+function MyApp({Component, pageProps}: AppProps) {
   return (
     <CacheProvider value={cache}>
       <GlobalStyles />
-      <Layout>
+      <BaseLayout>
         <Component {...pageProps} />
-      </Layout>
+      </BaseLayout>
     </CacheProvider>
   );
 }
