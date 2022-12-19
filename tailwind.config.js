@@ -1,3 +1,4 @@
+/** @type {import('tailwindcss').Config} */
 module.exports = {
   purge: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
   darkMode: 'class',
@@ -20,6 +21,10 @@ module.exports = {
         'dark-gunmetal': '#182730',
         mirage: '#1C2030',
         bunker: '#101820',
+        'kupon-blue': '#64B0F4',
+        'retail-blue': '#2A3588',
+        'mitra-white': '#FFFAFB',
+        'axiata-blue': '#164396',
       },
       screens: {
         desktop: {min: '1280px'},
@@ -33,6 +38,9 @@ module.exports = {
         h360p: '22.5rem',
         vhd: '80rem',
         hhd: '45rem',
+      },
+      boxShadow: {
+        neu: '4px 4px 0px rgba(16, 24, 32, 1)',
       },
     },
   },
