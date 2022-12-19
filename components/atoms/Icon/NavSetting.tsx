@@ -11,7 +11,7 @@ const NavSetting: React.FC<React.SVGProps<SVGSVGElement>> = (
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
       {...props}>
-      <g clip-path="url(#clip0_112_54)">
+      <g clipPath="url(#clip0_112_54)">
         <rect
           x="5.00001"
           y="5"
@@ -19,8 +19,8 @@ const NavSetting: React.FC<React.SVGProps<SVGSVGElement>> = (
           height="34"
           fill="#101820"
           stroke="#101820"
-          stroke-width="2"
-          stroke-linejoin="round"
+          strokeWidth="2"
+          strokeLinejoin="round"
         />
         <rect
           x="1.00001"
@@ -29,11 +29,11 @@ const NavSetting: React.FC<React.SVGProps<SVGSVGElement>> = (
           height="34"
           fill="#879BE8"
           stroke="#101820"
-          stroke-width="2"
-          stroke-linejoin="round"
+          strokeWidth="2"
+          strokeLinejoin="round"
         />
-        <path d="M12.5 28L12.5 8" stroke="#101820" stroke-width="3" />
-        <path d="M23.5 28L23.5 8" stroke="#101820" stroke-width="3" />
+        <path d="M12.5 28L12.5 8" stroke="#101820" strokeWidth="3" />
+        <path d="M23.5 28L23.5 8" stroke="#101820" strokeWidth="3" />
         <rect x="20" y="8" width="7" height="7" fill="#101820" />
         <rect x="8.99999" y="17" width="7" height="7" fill="#101820" />
       </g>
