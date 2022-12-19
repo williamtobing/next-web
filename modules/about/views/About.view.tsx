@@ -1,8 +1,12 @@
 import React from 'react';
-import {Text} from 'components/atoms';
+import {Text, Layout} from 'components/atoms';
 
 const About: React.FC = () => {
-  return <Text.HeadlineOne>About</Text.HeadlineOne>;
+  return (
+    <Layout.SectionContainer>
+      <Text.HeadlineOne>About</Text.HeadlineOne>
+    </Layout.SectionContainer>
+  );
 };
 
 export default About;
