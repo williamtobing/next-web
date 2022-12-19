@@ -1,3 +1,7 @@
 import NavSetting from './NavSetting';
 
-export default {NavSetting};
+const icons = {
+  NavSetting,
+};
+
+export default icons;
