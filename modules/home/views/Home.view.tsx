@@ -14,7 +14,7 @@ const Home: React.FC = () => {
   return (
     <Layout.Page>
       <Layout.Section css={tw`relative`}>
-        <Icon.NavSetting css={tw`absolute top-5 right-5`} />
+        <Icon.NavSetting css={tw`absolute top-1 right-5`} />
         <Text.HeadlineTwo>Hi there,</Text.HeadlineTwo>
         <Text.HeadlineOne css={tw`-mt-2`}>I am William</Text.HeadlineOne>
         <Text.Custom css={tw`font-medium text-2xl italic -mt-4 mb-3`}>
