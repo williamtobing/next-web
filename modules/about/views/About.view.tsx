@@ -3,9 +3,9 @@ import {Text, Layout} from 'components/atoms';
 
 const About: React.FC = () => {
   return (
-    <Layout.SectionContainer>
+    <Layout.Section>
       <Text.HeadlineOne>About</Text.HeadlineOne>
-    </Layout.SectionContainer>
+    </Layout.Section>
   );
 };
 
