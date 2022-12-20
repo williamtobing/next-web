@@ -68,8 +68,8 @@
 
 /* SELECTION */
 ::selection {
-  @apply bg-portage text-white; /* WebKit/Blink Browsers */
+  @apply bg-dull-lavender text-white; /* WebKit/Blink Browsers */
 }
 ::-moz-selection {
-  @apply bg-portage text-white; /* Gecko Browsers */
+  @apply bg-dull-lavender text-white; /* Gecko Browsers */
 }
