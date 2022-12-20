@@ -4,6 +4,9 @@ import {Text, Layout, Icon, NeuBox} from 'components/atoms';
 import {Roles} from '../components';
 import {projectData} from '../Data.home';
 
+import {Splide, SplideSlide} from '@splidejs/react-splide';
+import '@splidejs/react-splide/css/core';
+
 const Home: React.FC = () => {
   return (
     <Layout.Page>
@@ -24,17 +27,33 @@ const Home: React.FC = () => {
         <Text.HeadlineThree css={tw`mb-3`}>Recent projects</Text.HeadlineThree>
       </Layout.Section>
 
-      <Layout.Section css={tw`flex gap-3 pl-6 pr-0`}>
-        {projectData.map((item, i) => (
-          <NeuBox.Base
-            css={[
-              tw`flex justify-center items-center min-w-[100px] h-[100px]`,
-              item.bgColor,
-            ]}
-            key={i}>
-            {item.logo}
-          </NeuBox.Base>
-        ))}
+      <Layout.Section>
+        <Splide
+          tag="div"
+          options={{
+            perPage: 1,
+            perMove: 1,
+            interval: 5000,
+            rewind: true,
+            autoplay: true,
+            arrows: false,
+            autoWidth: true,
+            pauseOnHover: false,
+            type: 'loop',
+            gap: '0.75rem',
+          }}>
+          {projectData.map((item, i) => (
+            <SplideSlide style={{paddingBottom: '0.25rem'}} key={i}>
+              <NeuBox.Base
+                css={[
+                  tw`flex justify-center items-center min-w-[100px] h-[100px]`,
+                  item.bgColor,
+                ]}>
+                {item.logo}
+              </NeuBox.Base>
+            </SplideSlide>
+          ))}
+        </Splide>
       </Layout.Section>
     </Layout.Page>
   );
