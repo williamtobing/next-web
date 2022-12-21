@@ -1,5 +1,5 @@
-import Head from "next/head";
-import { useEffect } from "react";
+import Head from 'next/head';
+import {useEffect} from 'react';
 
 type metaProps = {
   title?: string;
@@ -8,7 +8,7 @@ type metaProps = {
   author?: string;
 };
 
-const Meta = ({ title, description, keywords, author }: metaProps) => {
+const Meta = ({title, description, keywords, author}: metaProps) => {
   useEffect(() => {
     document.documentElement.lang = navigator.language;
   }, []);
@@ -32,7 +32,7 @@ const Meta = ({ title, description, keywords, author }: metaProps) => {
       />
       <link
         rel="icon"
-        href="https://res.cloudinary.com/dox0nkwax/image/upload/v1635603694/logo/gray/Logo_mine_002_woeqa7.svg"
+        href="https://res.cloudinary.com/dox0nkwax/image/upload/v1671604317/logo/The%20Logo/TheLogo_g1rcd4.svg"
       />
       <title>{title}</title>
     </Head>
@@ -40,12 +40,12 @@ const Meta = ({ title, description, keywords, author }: metaProps) => {
 };
 
 Meta.defaultProps = {
-  title: "William S L",
+  title: 'William Suarez Lumbantobing',
   description:
     "Hi! This is William's website. William is a technology enthusiast who always wants to know many things about technological developments. Visit if you want to know more.",
   keywords:
-    "Portfolio, William, Suarez, Tech, Programming, Javascript, React, Vue, Laravel, Developer, Fullstack, Software",
-  author: "William Suarez Lumbantobing",
+    'Portfolio, William, Suarez, Tech, Programming, Javascript, React, Vue, Laravel, Developer, Fullstack, Software',
+  author: 'William Suarez Lumbantobing',
 };
 
 export default Meta;
