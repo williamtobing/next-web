@@ -5,15 +5,19 @@ import {Text} from './atoms';
 const Overlay = () => {
   return (
     <div
-      css={[true ? tw`fixed bottom-2 w-full flex flex-col z-50` : tw`hidden`]}>
+      css={[
+        true
+          ? tw`fixed bottom-0 w-full bg-daisy-bush/75 max-w-[512px] flex flex-col z-50`
+          : tw`hidden`,
+      ]}>
       {/* disable responsive temporary */}
       {/* <div css={tw`flex justify-center md:justify-end animate-pulse`}> */}
-      <div css={tw`flex justify-center max-w-[512px] animate-pulse`}>
-        <BeakerIcon css={tw`h-6 w-6 mx-2 text-bunker`} />
-        <Text.CaptionHead css={tw`tracking-widest`}>
+      <div css={tw`flex justify-center py-1.5 animate-pulse`}>
+        <BeakerIcon css={tw`h-6 w-6 mx-2 text-my-white`} />
+        <Text.CaptionHead css={tw`text-my-white tracking-widest`}>
           Revamp in progress...
         </Text.CaptionHead>
-        <BeakerIcon css={tw`h-6 w-6 mx-2 text-bunker`} />
+        <BeakerIcon css={tw`h-6 w-6 mx-2 text-my-white`} />
       </div>
     </div>
   );
