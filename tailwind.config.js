@@ -18,9 +18,10 @@ module.exports = {
       colors: {
         'my-white': '#EAEEFF',
         portage: '#879BE8',
+        chalky: '#E8D487',
         'dull-lavender': '#A387E8',
         'sky-blue': '#87CBE8',
-        chalky: '#E8D487',
+        'daisy-bush': '#41228E',
         'gray-chateau': '#98A0A8',
         'bright-gray': '#424756',
         'dark-gunmetal': '#182730',
