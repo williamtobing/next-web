@@ -1,8 +1,9 @@
+import React from 'react';
 import tw from 'twin.macro';
 import {BeakerIcon} from '@heroicons/react/24/solid';
 import {Text} from './atoms';
 
-const Overlay = () => {
+const Overlay: React.FC = () => {
   return (
     <div
       css={[
@@ -14,7 +15,7 @@ const Overlay = () => {
       {/* <div css={tw`flex justify-center md:justify-end animate-pulse`}> */}
       <div css={tw`flex justify-center py-1.5 animate-pulse`}>
         <BeakerIcon css={tw`h-6 w-6 mx-2 text-my-white`} />
-        <Text.CaptionHead css={tw`text-my-white tracking-widest`}>
+        <Text.CaptionHead css={tw`text-my-white tracking-widest mt-[2.5px]`}>
           Revamp in progress...
         </Text.CaptionHead>
         <BeakerIcon css={tw`h-6 w-6 mx-2 text-my-white`} />

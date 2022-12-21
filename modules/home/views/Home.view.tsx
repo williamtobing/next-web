@@ -1,5 +1,6 @@
 import React from 'react';
 import tw from 'twin.macro';
+import Link from 'next/link';
 import {Text, Layout, Icon, NeuBox} from 'components/atoms';
 import {Roles} from '../components';
 import {projectData, timelineData} from '../Data.home';
@@ -12,7 +13,9 @@ const Home: React.FC = () => {
   return (
     <Layout.Page>
       <Layout.Section css={tw`relative`}>
-        <Icon.NavSetting css={tw`absolute top-1 right-5 cursor-pointer`} />
+        <Link href="/about" passHref>
+          <Icon.NavSetting css={tw`absolute top-1 right-5 cursor-pointer`} />
+        </Link>
         <Text.HeadlineTwo>Hi there,</Text.HeadlineTwo>
         <Text.HeadlineOne css={tw`-mt-3`}>
           I am <span css={tw`text-daisy-bush`}>William</span>

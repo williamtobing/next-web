@@ -28,11 +28,11 @@ const Meta = ({title, description, keywords, author}: metaProps) => {
       <meta
         name="image"
         property="og:image"
-        content="https://res.cloudinary.com/dox0nkwax/image/upload/v1635608705/logo/william12kx_zc1a8m.png"
+        content="https://res.cloudinary.com/dox0nkwax/image/upload/v1671622911/logo/The%20Logo/TheFixLogo-R_4x_yv1j1c.png"
       />
       <link
         rel="icon"
-        href="https://res.cloudinary.com/dox0nkwax/image/upload/v1671604317/logo/The%20Logo/TheLogo_g1rcd4.svg"
+        href="https://res.cloudinary.com/dox0nkwax/image/upload/v1671622911/logo/The%20Logo/TheFixLogo-R_2x_bivxjn.png"
       />
       <title>{title}</title>
     </Head>

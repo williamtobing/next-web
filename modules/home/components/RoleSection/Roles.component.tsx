@@ -12,7 +12,7 @@ const RolesContainer = tw.div`flex gap-2 mb-2`;
 
 const Roles: React.FC = () => {
   return (
-    <>
+    <React.Fragment>
       <RolesContainer>
         <NeuBox.Base css={tw`flex-1`}>
           <div css={tw`flex`}>
@@ -66,7 +66,7 @@ const Roles: React.FC = () => {
           </div>
         </NeuBox.Base>
       </RolesContainer>
-    </>
+    </React.Fragment>
   );
 };
 
