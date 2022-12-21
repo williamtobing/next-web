@@ -29,3 +29,42 @@ export const projectData: Project[] = [
     logo: <Logo.XLAxiata />,
   },
 ];
+
+export type Timeline = {
+  date: Date;
+  description: string;
+  progress: number;
+};
+
+export const timelineData: Timeline[] = [
+  {
+    date: new Date('2022-02'),
+    description: 'Join Pintap',
+    progress: 0.75,
+  },
+  {
+    date: new Date('2021-03'),
+    description: 'Join XL Axiata',
+    progress: 1,
+  },
+  {
+    date: new Date('2020-11'),
+    description: 'Freelance at Wedocation',
+    progress: 1,
+  },
+  {
+    date: new Date('2020-09'),
+    description: 'Mentor at Progate',
+    progress: 1,
+  },
+  {
+    date: new Date('2019-06'),
+    description: 'Intern at Super Indo',
+    progress: 1,
+  },
+  {
+    date: new Date('2017-08'),
+    description: 'Start College',
+    progress: 1,
+  },
+];

@@ -6,7 +6,7 @@ import 'styles/Global.style.css';
 
 import BaseLayout from 'components/BaseLayout';
 
-function MyApp({Component, pageProps}: AppProps) {
+export default function MyApp({Component, pageProps}: AppProps) {
   return (
     <CacheProvider value={cache}>
       <GlobalStyles />
@@ -16,4 +16,3 @@ function MyApp({Component, pageProps}: AppProps) {
     </CacheProvider>
   );
 }
-export default MyApp;

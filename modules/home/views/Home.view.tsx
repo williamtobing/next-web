@@ -1,9 +1,11 @@
 import React from 'react';
 import tw from 'twin.macro';
+import Link from 'next/link';
 import {Text, Layout, Icon, NeuBox} from 'components/atoms';
 import {Roles} from '../components';
-import {projectData} from '../Data.home';
+import {projectData, timelineData} from '../Data.home';
 
+import {format} from 'date-fns';
 import {Splide, SplideSlide} from '@splidejs/react-splide';
 import '@splidejs/react-splide/css/core';
 
@@ -11,20 +13,26 @@ const Home: React.FC = () => {
   return (
     <Layout.Page>
       <Layout.Section css={tw`relative`}>
-        <Icon.NavSetting css={tw`absolute top-1 right-5 cursor-pointer`} />
+        <Link href="/about" passHref>
+          <Icon.NavSetting css={tw`absolute top-1 right-5 cursor-pointer`} />
+        </Link>
         <Text.HeadlineTwo>Hi there,</Text.HeadlineTwo>
-        <Text.HeadlineOne css={tw`-mt-3`}>I am William</Text.HeadlineOne>
+        <Text.HeadlineOne css={tw`-mt-3`}>
+          I am <span css={tw`text-daisy-bush`}>William</span>
+        </Text.HeadlineOne>
         <Text.Custom css={tw`font-medium text-2xl italic -mt-4 mb-3`}>
           Software Engineer
         </Text.Custom>
       </Layout.Section>
 
-      <Layout.Section css={tw`mb-6`}>
+      <Layout.Section>
         <Roles />
       </Layout.Section>
 
       <Layout.Section>
-        <Text.HeadlineThree css={tw`mb-3`}>Recent projects</Text.HeadlineThree>
+        <Text.HeadlineThree css={tw`mt-6 mb-3`}>
+          Recent projects
+        </Text.HeadlineThree>
       </Layout.Section>
 
       <Layout.Section>
@@ -54,6 +62,25 @@ const Home: React.FC = () => {
             </SplideSlide>
           ))}
         </Splide>
+      </Layout.Section>
+
+      <Layout.Section>
+        <Text.HeadlineThree css={tw`mt-1 mb-3`}>Timeline</Text.HeadlineThree>
+      </Layout.Section>
+
+      <Layout.Section>
+        {timelineData.map((item, i) => (
+          <NeuBox.Base css={tw`bg-portage mb-3`} key={i}>
+            <div css={tw`flex px-5 py-3`}>
+              <Text.SubtitleOne css={tw`text-chalky w-[88px]`}>
+                {format(item.date, 'MMM yyyy')}
+              </Text.SubtitleOne>
+              <Text.SubtitleOne css={tw`text-my-white`}>
+                {item.description}
+              </Text.SubtitleOne>
+            </div>
+          </NeuBox.Base>
+        ))}
       </Layout.Section>
     </Layout.Page>
   );
