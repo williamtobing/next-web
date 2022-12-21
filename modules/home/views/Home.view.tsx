@@ -41,9 +41,8 @@ const Home: React.FC = () => {
           options={{
             perPage: 1,
             perMove: 1,
-            interval: 5000,
-            rewind: true,
-            autoplay: true,
+            rewind: false,
+            autoplay: false,
             arrows: false,
             autoWidth: true,
             pauseOnHover: false,
@@ -81,6 +80,39 @@ const Home: React.FC = () => {
             </div>
           </NeuBox.Base>
         ))}
+      </Layout.Section>
+
+      <Layout.Section>
+        <Text.HeadlineThree css={tw`mt-6 mb-3`}>Tech Stack</Text.HeadlineThree>
+      </Layout.Section>
+
+      <Layout.Section>
+        <Splide
+          tag="div"
+          options={{
+            perPage: 1,
+            perMove: 1,
+            interval: 5000,
+            rewind: true,
+            autoplay: true,
+            arrows: false,
+            autoWidth: true,
+            pauseOnHover: false,
+            type: 'loop',
+            gap: '0.75rem',
+          }}>
+          {projectData.map((item, i) => (
+            <SplideSlide style={{paddingBottom: '0.25rem'}} key={i}>
+              <NeuBox.Base
+                css={[
+                  tw`flex justify-center items-center min-w-[120px] h-[160px] rounded-lg`,
+                  item.bgColor,
+                ]}>
+                {item.logo}
+              </NeuBox.Base>
+            </SplideSlide>
+          ))}
+        </Splide>
       </Layout.Section>
     </Layout.Page>
   );

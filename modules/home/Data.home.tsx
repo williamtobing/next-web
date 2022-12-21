@@ -13,7 +13,7 @@ export const projectData: Project[] = [
   },
   {
     bgColor: tw`bg-retail-blue`,
-    logo: <Logo.PintapRetail />,
+    logo: <Logo.PintapRetail css={tw`mt-1.5`} />,
   },
   {
     bgColor: tw`bg-mitra-white`,
