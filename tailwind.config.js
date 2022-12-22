@@ -16,6 +16,7 @@ module.exports = {
         ubuntu: "'Ubuntu', sans-serif",
       },
       colors: {
+        /* original */
         'my-white': '#EAEEFF',
         portage: '#879BE8',
         chalky: '#E8D487',
@@ -27,14 +28,23 @@ module.exports = {
         'dark-gunmetal': '#182730',
         mirage: '#1C2030',
         bunker: '#101820',
+        /* external */
         'kupon-blue': '#64B0F4',
         'retail-blue': '#2A3588',
         'mitra-white': '#FFFAFB',
         'axiata-blue': '#164396',
+        'next-black': '#010100',
+        'react-blue': '#60DBFB',
+        'typescript-blue': '#3178C6',
+        'javascript-yellow': '#FCDD01',
+        'laravel-orange': '#F9322C',
+        'tailwind-blue': '#0EA4E8',
+        'vue-green': '#43B882',
       },
       screens: {
         desktop: {min: '1280px'},
         tablet: {min: '768px'},
+        mini: {max: '393px'},
       },
       animation: {
         'spin-slow': 'spin 3s linear infinite',
