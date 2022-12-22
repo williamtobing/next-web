@@ -35,6 +35,7 @@ module.exports = {
       screens: {
         desktop: {min: '1280px'},
         tablet: {min: '768px'},
+        mini: {max: '393px'},
       },
       animation: {
         'spin-slow': 'spin 3s linear infinite',
