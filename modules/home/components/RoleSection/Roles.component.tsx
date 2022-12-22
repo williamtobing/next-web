@@ -17,11 +17,13 @@ const Roles: React.FC = () => {
         <NeuBox.Base css={tw`flex-1`}>
           <div css={tw`flex`}>
             <div css={tw`inline-block border-r-2 border-bunker bg-chalky p-1`}>
-              <CodeBracketIcon css={tw`h-7 w-7 text-bunker`} />
+              <CodeBracketIcon css={tw`h-7 w-7 mini:(h-6 w-6) text-bunker`} />
             </div>
-            <div css={tw`bg-portage w-full pr-2`}>
-              <div css={tw`flex items-center h-full w-full pl-2`}>
-                <Text.CaptionHead>Frontend Engineer</Text.CaptionHead>
+            <div css={tw`bg-portage w-full px-2 mini:px-[4px]`}>
+              <div css={tw`flex items-center h-full`}>
+                <Text.CaptionHead css={tw`w-full`}>
+                  Frontend Engineer
+                </Text.CaptionHead>
               </div>
             </div>
           </div>
@@ -29,11 +31,13 @@ const Roles: React.FC = () => {
         <NeuBox.Base css={tw`flex-1`}>
           <div css={tw`flex`}>
             <div css={tw`inline-block border-r-2 border-bunker bg-chalky p-1`}>
-              <CommandLineIcon css={tw`h-7 w-7 text-bunker`} />
+              <CommandLineIcon css={tw`h-7 w-7 mini:(h-6 w-6) text-bunker`} />
             </div>
-            <div css={tw`bg-portage w-full pr-2`}>
-              <div css={tw`flex items-center h-full w-full pl-2`}>
-                <Text.CaptionHead>Web Developer</Text.CaptionHead>
+            <div css={tw`bg-portage w-full px-2 mini:px-[4px]`}>
+              <div css={tw`flex items-center h-full`}>
+                <Text.CaptionHead css={tw`w-full`}>
+                  Web Developer
+                </Text.CaptionHead>
               </div>
             </div>
           </div>
@@ -44,11 +48,13 @@ const Roles: React.FC = () => {
         <NeuBox.Base css={tw`flex-1`}>
           <div css={tw`flex`}>
             <div css={tw`inline-block border-r-2 border-bunker bg-chalky p-1`}>
-              <WindowIcon css={tw`h-7 w-7 text-bunker`} />
+              <WindowIcon css={tw`h-7 w-7 mini:(h-6 w-6) text-bunker`} />
             </div>
-            <div css={tw`bg-portage w-full pr-2`}>
-              <div css={tw`flex items-center h-full w-full pl-2`}>
-                <Text.CaptionHead>UI Designer</Text.CaptionHead>
+            <div css={tw`bg-portage w-full px-2 mini:px-[4px]`}>
+              <div css={tw`flex items-center h-full`}>
+                <Text.CaptionHead css={tw`w-full`}>
+                  UI Designer
+                </Text.CaptionHead>
               </div>
             </div>
           </div>
@@ -56,11 +62,15 @@ const Roles: React.FC = () => {
         <NeuBox.Base css={tw`flex-1`}>
           <div css={tw`flex`}>
             <div css={tw`inline-block border-r-2 border-bunker bg-chalky p-1`}>
-              <ComputerDesktopIcon css={tw`h-7 w-7 text-bunker`} />
+              <ComputerDesktopIcon
+                css={tw`h-7 w-7 mini:(h-6 w-6) text-bunker`}
+              />
             </div>
-            <div css={tw`bg-portage w-full pr-2`}>
-              <div css={tw`flex items-center h-full w-full pl-2`}>
-                <Text.CaptionHead>Web Designer</Text.CaptionHead>
+            <div css={tw`bg-portage w-full px-2 mini:px-[4px]`}>
+              <div css={tw`flex items-center h-full`}>
+                <Text.CaptionHead css={tw`w-full`}>
+                  Web Designer
+                </Text.CaptionHead>
               </div>
             </div>
           </div>
