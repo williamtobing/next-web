@@ -10,6 +10,10 @@ import {format} from 'date-fns';
 import {Splide, SplideSlide} from '@splidejs/react-splide';
 import '@splidejs/react-splide/css/core';
 
+const SliderBoxStyle = tw`flex justify-center items-center bg-white min-w-[120px] h-[160px] rounded-lg overflow-hidden duration-1000 ease-out`;
+const SliderContentBox = tw.div`relative hover:scale-150 duration-1000 ease-out mt-[9px]`;
+const TechTextStyle = tw`absolute top-1/2 left-1/2 [transform:translate(-50%, -50%)] text-transparent font-bold text-[1.5vw] px-20 pt-20 pb-20 duration-1000 ease-out`;
+
 const Home: React.FC = () => {
   return (
     <Layout.Page>
@@ -108,25 +112,23 @@ const Home: React.FC = () => {
           }}>
           {techStackData.map((item, i) => (
             <SplideSlide style={{paddingBottom: '0.25rem'}} key={i}>
-              <NeuBox.Base
-                css={[
-                  tw`flex justify-center items-center min-w-[120px] h-[160px] rounded-lg`,
-                  item.neuStyle,
-                ]}>
-                <div>
-                  <Image
-                    src={item.source}
-                    alt={`${item.text} Logo`}
-                    width={100}
-                    height={100}
-                    css={item.imgStyle}
-                    priority
-                  />
-                  <Text.SubtitleOne css={[tw`text-center`, item.textStyle]}>
-                    {item.text}
-                  </Text.SubtitleOne>
-                </div>
-              </NeuBox.Base>
+              <a href={item.link} target="_blank" rel="noopener noreferrer">
+                <NeuBox.Base css={[SliderBoxStyle, item.neuStyle]}>
+                  <SliderContentBox>
+                    <Image
+                      src={item.source}
+                      alt={`${item.text} Logo`}
+                      width={100}
+                      height={100}
+                      css={item.imgStyle}
+                      priority
+                    />
+                    <Text.Custom css={[TechTextStyle, item.textStyle]}>
+                      {item.text}
+                    </Text.Custom>
+                  </SliderContentBox>
+                </NeuBox.Base>
+              </a>
             </SplideSlide>
           ))}
         </Splide>
