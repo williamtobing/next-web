@@ -4,8 +4,8 @@ export const HeadlineOne = tw.h1`font-jakarta font-extrabold [font-size:49px] mi
 export const HeadlineTwo = tw.h2`font-jakarta font-bold [font-size:36px] mini:text-[9vw]`;
 export const HeadlineThree = tw.h3`font-jakarta font-bold [font-size:24px] mini:text-[6vw] underline`;
 export const SubtitleOne = tw.p`font-jakarta font-bold [font-size:16px] mini:text-[3.92vw]`;
-export const CaptionHead = tw.p`font-jakarta font-semibold [font-size:12px] mini:text-[3vw]`;
-export const Caption = tw.p`font-jakarta font-normal [font-size:12px] mini:text-[3vw]`;
+export const CaptionHead = tw.p`font-jakarta font-semibold [font-size:12px] mini:text-[2.92vw]`;
+export const Caption = tw.p`font-jakarta font-normal [font-size:12px] mini:text-[2.92vw]`;
 export const Custom = tw.p`font-jakarta`;
 
 // disable responsive temporary
