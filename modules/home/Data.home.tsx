@@ -75,6 +75,7 @@ export type TechStack = {
   neuStyle: TwStyle;
   textStyle: TwStyle;
   imgStyle?: TwStyle;
+  contentBoxStyle?: TwStyle;
   source: string;
   text: string;
   link: string;
@@ -84,6 +85,7 @@ export const techStackData: TechStack[] = [
   {
     neuStyle: tw`hover:bg-next-black`,
     textStyle: tw`hover:(text-white bg-next-black)`,
+    contentBoxStyle: tw`hover:scale-[1.75]`,
     source: `${imgUrl}/v1636001626/logo/stack%20logo/next-js_felzgo.webp`,
     text: 'Next.js',
     link: 'https://nextjs.org/',
@@ -92,6 +94,7 @@ export const techStackData: TechStack[] = [
     neuStyle: tw`hover:bg-react-blue`,
     textStyle: tw`hover:(text-white bg-react-blue)`,
     imgStyle: tw`animate-[spin_100s_linear_infinite]`,
+    contentBoxStyle: tw`hover:scale-[1.5]`,
     source: `${imgUrl}/v1636000856/logo/stack%20logo/react_ura0hq.webp`,
     text: 'React.js',
     link: 'https://reactjs.org/',
@@ -99,6 +102,7 @@ export const techStackData: TechStack[] = [
   {
     neuStyle: tw`hover:bg-typescript-blue`,
     textStyle: tw`hover:(text-white bg-typescript-blue)`,
+    contentBoxStyle: tw`hover:scale-[1.2]`,
     source: `${imgUrl}/v1636000856/logo/stack%20logo/typescript_ho8aqd.png`,
     text: 'TypeScript',
     link: 'https://www.typescriptlang.org/',
@@ -106,6 +110,7 @@ export const techStackData: TechStack[] = [
   {
     neuStyle: tw`hover:bg-tailwind-blue`,
     textStyle: tw`hover:(text-white bg-tailwind-blue)`,
+    contentBoxStyle: tw`hover:scale-[1.4]`,
     source: `${imgUrl}/v1636000856/logo/stack%20logo/tailwindcss_csi3ob.png`,
     text: 'Tailwind CSS',
     link: 'https://tailwindcss.com/',
@@ -113,6 +118,7 @@ export const techStackData: TechStack[] = [
   {
     neuStyle: tw`hover:bg-vue-green`,
     textStyle: tw`hover:(text-white bg-vue-green)`,
+    contentBoxStyle: tw`hover:scale-[1.75]`,
     source: `${imgUrl}/v1636027581/logo/stack%20logo/vue_kedlql.webp`,
     text: 'Vue.js',
     link: 'https://vuejs.org/',
@@ -120,6 +126,7 @@ export const techStackData: TechStack[] = [
   {
     neuStyle: tw`hover:bg-laravel-orange`,
     textStyle: tw`hover:(text-white bg-laravel-orange)`,
+    contentBoxStyle: tw`hover:scale-[1.5]`,
     source: `${imgUrl}/v1636027266/logo/stack%20logo/laravel_lmyz5m.webp`,
     text: 'Laravel',
     link: 'https://laravel.com/',
@@ -128,6 +135,7 @@ export const techStackData: TechStack[] = [
     neuStyle: tw`hover:bg-javascript-yellow`,
     textStyle: tw`hover:(text-white bg-javascript-yellow)`,
     imgStyle: tw`rounded-lg`,
+    contentBoxStyle: tw`hover:scale-[1.25]`,
     source: `${imgUrl}/v1671704699/logo/stack%20logo/javascript_xpeqpo.webp`,
     text: 'JavaScript',
     link: 'https://www.javascript.com/',

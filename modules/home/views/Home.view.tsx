@@ -1,18 +1,13 @@
 import React from 'react';
 import tw from 'twin.macro';
 import Link from 'next/link';
-import Image from 'next/image';
 import {Text, Layout, Icon, NeuBox} from 'components/atoms';
-import {Roles} from '../components';
-import {projectData, timelineData, techStackData} from '../Data.home';
+import {Roles, Stacks} from '../components';
+import {projectData, timelineData} from '../Data.home';
 
 import {format} from 'date-fns';
 import {Splide, SplideSlide} from '@splidejs/react-splide';
 import '@splidejs/react-splide/css/core';
-
-const SliderBoxStyle = tw`flex justify-center items-center bg-white min-w-[120px] h-[160px] rounded-lg overflow-hidden duration-1000 ease-out`;
-const SliderContentBox = tw.div`relative hover:scale-150 duration-1000 ease-out mt-[9px]`;
-const TechTextStyle = tw`absolute top-1/2 left-1/2 [transform:translate(-50%, -50%)] text-transparent font-bold text-[1.5vw] px-20 pt-20 pb-20 duration-1000 ease-out`;
 
 const Home: React.FC = () => {
   return (
@@ -92,46 +87,11 @@ const Home: React.FC = () => {
       </Layout.Section>
 
       <Layout.Section>
-        <Text.HeadlineThree css={tw`mt-6 mb-3`}>Tech Stack</Text.HeadlineThree>
+        <Text.HeadlineThree css={tw`mt-6 mb-3`}>Tech Stacks</Text.HeadlineThree>
       </Layout.Section>
 
       <Layout.Section>
-        <Splide
-          tag="div"
-          options={{
-            perPage: 1,
-            perMove: 1,
-            interval: 5000,
-            rewind: true,
-            autoplay: true,
-            arrows: false,
-            autoWidth: true,
-            pauseOnHover: false,
-            type: 'loop',
-            gap: '0.75rem',
-          }}>
-          {techStackData.map((item, i) => (
-            <SplideSlide style={{paddingBottom: '0.25rem'}} key={i}>
-              <a href={item.link} target="_blank" rel="noopener noreferrer">
-                <NeuBox.Base css={[SliderBoxStyle, item.neuStyle]}>
-                  <SliderContentBox>
-                    <Image
-                      src={item.source}
-                      alt={`${item.text} Logo`}
-                      width={100}
-                      height={100}
-                      css={item.imgStyle}
-                      priority
-                    />
-                    <Text.Custom css={[TechTextStyle, item.textStyle]}>
-                      {item.text}
-                    </Text.Custom>
-                  </SliderContentBox>
-                </NeuBox.Base>
-              </a>
-            </SplideSlide>
-          ))}
-        </Splide>
+        <Stacks />
       </Layout.Section>
     </Layout.Page>
   );
