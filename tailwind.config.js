@@ -42,9 +42,10 @@ module.exports = {
         'vue-green': '#43B882',
       },
       screens: {
-        desktop: {min: '1280px'},
-        tablet: {min: '768px'},
-        mini: {max: '393px'},
+        min1280: {min: '1280px'},
+        min768: {min: '768px'},
+        min512: {min: '512px'},
+        max393: {max: '393px'},
       },
       animation: {
         'spin-slow': 'spin 3s linear infinite',

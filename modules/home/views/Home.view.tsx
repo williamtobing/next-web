@@ -23,7 +23,7 @@ const Home: React.FC = () => {
           I am <span css={tw`text-daisy-bush`}>William</span>
         </Text.HeadlineOne>
         <Text.Custom
-          css={tw`font-medium text-2xl mini:text-[6.1vw] italic -mt-4 mb-3`}>
+          css={tw`font-medium text-2xl max393:text-[6.1vw] italic -mt-4 mb-3`}>
           Software Engineer
         </Text.Custom>
       </Layout.Section>
@@ -73,12 +73,12 @@ const Home: React.FC = () => {
       <Layout.Section>
         {timelineData.map((item, i) => (
           <NeuBox.Base css={tw`bg-portage mb-3`} key={i}>
-            <div css={tw`flex px-[18px] mini:px-3 py-3`}>
+            <div css={tw`flex px-[18px] max393:px-3 py-3`}>
               <Text.SubtitleOne
-                css={tw`text-chalky w-1/3 max-w-[88px] mini:w-[30%]`}>
+                css={tw`text-chalky w-1/3 max-w-[88px] max393:w-[30%]`}>
                 {format(item.date, 'MMM yyyy')}
               </Text.SubtitleOne>
-              <Text.SubtitleOne css={tw`text-my-white mini:w-[70%]`}>
+              <Text.SubtitleOne css={tw`text-my-white max393:w-[70%]`}>
                 {item.description}
               </Text.SubtitleOne>
             </div>
