@@ -17,9 +17,9 @@ const Roles: React.FC = () => {
         <NeuBox.Base css={tw`flex-1`}>
           <div css={tw`flex`}>
             <div css={tw`inline-block border-r-2 border-bunker bg-chalky p-1`}>
-              <CodeBracketIcon css={tw`h-7 w-7 mini:(h-6 w-6) text-bunker`} />
+              <CodeBracketIcon css={tw`h-7 w-7 max393:(h-6 w-6) text-bunker`} />
             </div>
-            <div css={tw`bg-portage w-full px-2 mini:px-[4px]`}>
+            <div css={tw`bg-portage w-full px-2 max393:px-[4px]`}>
               <div css={tw`flex items-center h-full`}>
                 <Text.CaptionHead css={tw`w-full`}>
                   Frontend Engineer
@@ -31,9 +31,9 @@ const Roles: React.FC = () => {
         <NeuBox.Base css={tw`flex-1`}>
           <div css={tw`flex`}>
             <div css={tw`inline-block border-r-2 border-bunker bg-chalky p-1`}>
-              <CommandLineIcon css={tw`h-7 w-7 mini:(h-6 w-6) text-bunker`} />
+              <CommandLineIcon css={tw`h-7 w-7 max393:(h-6 w-6) text-bunker`} />
             </div>
-            <div css={tw`bg-portage w-full px-2 mini:px-[4px]`}>
+            <div css={tw`bg-portage w-full px-2 max393:px-[4px]`}>
               <div css={tw`flex items-center h-full`}>
                 <Text.CaptionHead css={tw`w-full`}>
                   Web Developer
@@ -48,9 +48,9 @@ const Roles: React.FC = () => {
         <NeuBox.Base css={tw`flex-1`}>
           <div css={tw`flex`}>
             <div css={tw`inline-block border-r-2 border-bunker bg-chalky p-1`}>
-              <WindowIcon css={tw`h-7 w-7 mini:(h-6 w-6) text-bunker`} />
+              <WindowIcon css={tw`h-7 w-7 max393:(h-6 w-6) text-bunker`} />
             </div>
-            <div css={tw`bg-portage w-full px-2 mini:px-[4px]`}>
+            <div css={tw`bg-portage w-full px-2 max393:px-[4px]`}>
               <div css={tw`flex items-center h-full`}>
                 <Text.CaptionHead css={tw`w-full`}>
                   UI Designer
@@ -63,10 +63,10 @@ const Roles: React.FC = () => {
           <div css={tw`flex`}>
             <div css={tw`inline-block border-r-2 border-bunker bg-chalky p-1`}>
               <ComputerDesktopIcon
-                css={tw`h-7 w-7 mini:(h-6 w-6) text-bunker`}
+                css={tw`h-7 w-7 max393:(h-6 w-6) text-bunker`}
               />
             </div>
-            <div css={tw`bg-portage w-full px-2 mini:px-[4px]`}>
+            <div css={tw`bg-portage w-full px-2 max393:px-[4px]`}>
               <div css={tw`flex items-center h-full`}>
                 <Text.CaptionHead css={tw`w-full`}>
                   Web Designer
