@@ -1,4 +1,5 @@
 export {default as Icon} from './Icon';
+export {default as Illustration} from './Illustration';
 export {default as Layout} from './Layout';
 export {default as Logo} from './Logo';
 export {default as NeuBox} from './NeuBox';

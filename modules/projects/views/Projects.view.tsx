@@ -3,7 +3,7 @@ import tw from 'twin.macro';
 import {Layout, Logo, Text, Icon} from 'components/atoms';
 import {Sidebar} from 'components/molecules';
 
-const About: React.FC = () => {
+const Projects: React.FC = () => {
   const [isSidebarOpen, setSidebarOpen] = useState<boolean>(false);
 
   const handleSidebarVisibility = useCallback(() => {
@@ -33,27 +33,27 @@ const About: React.FC = () => {
           <div css={tw`inline-block p-1`}>
             <Logo.TheLogoTwo css={tw`hidden`} />
             <Text.SubtitleOne css={tw`mb-2`}>
-              About Temporary Page
+              Projects Temporary Page
             </Text.SubtitleOne>
             <Text.Caption>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo
-              aliquam voluptas cumque ab ea eveniet aperiam quibusdam cum quidem
-              nesciunt odio ipsa, dolore quasi exercitationem vel tempora, quia
-              atque quod.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas
+              veniam minima incidunt inventore, temporibus praesentium maxime
+              corrupti eveniet, accusamus quibusdam ipsum, numquam delectus esse
+              sed saepe eius illum nesciunt corporis.
             </Text.Caption>
             <br />
             <Text.Caption>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
-              modi voluptatibus ad delectus id cum veniam eos quo aspernatur
-              eaque natus fugiat architecto, quaerat enim ducimus voluptas quia
-              nisi sapiente!
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam
+              tempora laborum libero in rerum excepturi dolorum hic ratione ex!
+              Rerum, iusto placeat? Dolorem dicta dolore obcaecati tempore.
+              Eius, illo et!
             </Text.Caption>
             <br />
             <Text.Caption>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos
-              quisquam quos architecto, ullam nemo natus perferendis asperiores
-              ad similique earum molestiae doloremque deserunt dignissimos
-              praesentium, dicta culpa error quis ipsa.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Perspiciatis, nam dolor ex veritatis reprehenderit temporibus
+              illo. Aperiam architecto impedit recusandae voluptatum dolorem,
+              corporis optio cumque, quod, delectus nemo minus ipsam!
             </Text.Caption>
           </div>
         </Layout.Section>
@@ -62,4 +62,4 @@ const About: React.FC = () => {
   );
 };
 
-export default About;
+export default Projects;

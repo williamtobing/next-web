@@ -21,7 +21,8 @@ const Roles: React.FC = () => {
             </div>
             <div css={tw`bg-portage w-full px-2 max393:px-[4px]`}>
               <div css={tw`flex items-center h-full`}>
-                <Text.CaptionHead css={tw`w-full`}>
+                <Text.CaptionHead
+                  css={tw`w-full whitespace-nowrap overflow-hidden`}>
                   Frontend Engineer
                 </Text.CaptionHead>
               </div>
@@ -35,7 +36,8 @@ const Roles: React.FC = () => {
             </div>
             <div css={tw`bg-portage w-full px-2 max393:px-[4px]`}>
               <div css={tw`flex items-center h-full`}>
-                <Text.CaptionHead css={tw`w-full`}>
+                <Text.CaptionHead
+                  css={tw`w-full whitespace-nowrap overflow-hidden`}>
                   Web Developer
                 </Text.CaptionHead>
               </div>
@@ -52,7 +54,8 @@ const Roles: React.FC = () => {
             </div>
             <div css={tw`bg-portage w-full px-2 max393:px-[4px]`}>
               <div css={tw`flex items-center h-full`}>
-                <Text.CaptionHead css={tw`w-full`}>
+                <Text.CaptionHead
+                  css={tw`w-full whitespace-nowrap overflow-hidden`}>
                   UI Designer
                 </Text.CaptionHead>
               </div>
@@ -68,7 +71,8 @@ const Roles: React.FC = () => {
             </div>
             <div css={tw`bg-portage w-full px-2 max393:px-[4px]`}>
               <div css={tw`flex items-center h-full`}>
-                <Text.CaptionHead css={tw`w-full`}>
+                <Text.CaptionHead
+                  css={tw`w-full whitespace-nowrap overflow-hidden`}>
                   Web Designer
                 </Text.CaptionHead>
               </div>

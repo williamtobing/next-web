@@ -8,7 +8,7 @@ const Overlay: React.FC = () => {
     <div
       css={[
         true
-          ? tw`fixed bottom-0 w-full bg-daisy-bush/75 max-w-[512px] flex flex-col z-50`
+          ? tw`fixed bottom-0 w-full bg-daisy-bush/75 min512:max-w-[512px] flex flex-col z-10`
           : tw`hidden`,
       ]}>
       {/* disable responsive temporary */}
