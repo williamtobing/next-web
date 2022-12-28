@@ -138,6 +138,6 @@ export const techStackData: TechStack[] = [
     contentBoxStyle: tw`hover:scale-[1.25]`,
     source: `${imgUrl}/v1671704699/logo/stack%20logo/javascript_xpeqpo.webp`,
     text: 'JavaScript',
-    link: 'https://www.javascript.com/',
+    link: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript',
   },
 ];
