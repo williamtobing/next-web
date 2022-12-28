@@ -1,4 +1,4 @@
-import React, {useCallback, useEffect, useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import tw from 'twin.macro';
 import Link from 'next/link';
 import {Text, Illustration} from 'components/atoms';
@@ -31,7 +31,12 @@ const Sidebar: React.FC<Props> = ({isOpen, onClickOutside}) => {
               <li css={tw`text-right mb-8`} key={i}>
                 <Link href={item.value} passHref>
                   <Text.HeadlineTwo
-                    css={tw`text-my-white cursor-pointer inline-block`}>
+                    css={[
+                      tw`cursor-pointer inline-block`,
+                      item.value === path
+                        ? tw`text-chalky`
+                        : tw`text-my-white hover:text-chalky`,
+                    ]}>
                     {item.label}
                   </Text.HeadlineTwo>
                 </Link>
