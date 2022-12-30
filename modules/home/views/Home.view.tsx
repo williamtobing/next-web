@@ -2,6 +2,7 @@ import React, {useCallback, useState} from 'react';
 import tw from 'twin.macro';
 import {Text, Layout, Icon, NeuBox} from 'components/atoms';
 import {Sidebar} from 'components/molecules';
+import {navOptions} from 'components/molecules/Sidebar/Data.sidebar';
 import {Roles, Stacks} from '../components';
 import {projectData, timelineData} from '../Data.home';
 
@@ -24,17 +25,34 @@ const Home: React.FC = () => {
       />
       <Layout.Page>
         <Layout.Section css={tw`relative`}>
-          <span onClick={() => setSidebarOpen(true)}>
+          <span onClick={() => setSidebarOpen(true)} css={tw`above512:hidden`}>
             <Icon.NavSetting css={tw`absolute top-1 right-5 cursor-pointer`} />
           </span>
-          <Text.HeadlineTwo>Hi there,</Text.HeadlineTwo>
-          <Text.HeadlineOne css={tw`-mt-3`}>
-            I am <span css={tw`text-daisy-bush`}>William</span>
-          </Text.HeadlineOne>
-          <Text.Custom
-            css={tw`font-medium text-2xl max393:text-[6.1vw] italic -mt-4 mb-3`}>
-            Software Engineer
-          </Text.Custom>
+          <div css={tw`flex w-full`}>
+            <div css={tw`above1280:w-1/2`}>
+              <Text.HeadlineTwo>Hi there,</Text.HeadlineTwo>
+              <Text.HeadlineOne css={tw`-mt-3`}>
+                I am <span css={tw`text-daisy-bush`}>William</span>
+              </Text.HeadlineOne>
+              <Text.HeadlineThree
+                css={tw`font-medium no-underline italic -mt-4 mb-3`}>
+                Software Engineer
+              </Text.HeadlineThree>
+            </div>
+            <div
+              css={tw`flex justify-center items-center gap-10 w-1/2 below1280:(hidden)`}>
+              {navOptions
+                .filter((item) => item.value !== '/')
+                .map((item, i) => (
+                  <div key={i}>
+                    <Icon.Folder css={tw`w-[92.72px] h-[67px]`} />
+                    <Text.SubtitleOne css={tw`text-center mt-2`}>
+                      {item.label}
+                    </Text.SubtitleOne>
+                  </div>
+                ))}
+            </div>
+          </div>
         </Layout.Section>
 
         <Layout.Section>
@@ -82,13 +100,13 @@ const Home: React.FC = () => {
         <Layout.Section>
           {timelineData.map((item, i) => (
             <NeuBox.Base css={tw`bg-portage mb-3`} key={i}>
-              <div css={tw`flex px-[18px] max393:px-3 py-3`}>
+              <div css={tw`flex px-[18px] below393:px-3 py-3`}>
                 <Text.SubtitleOne
-                  css={tw`text-chalky w-1/3 max-w-[88px] max393:w-[30%] whitespace-nowrap overflow-hidden`}>
+                  css={tw`text-chalky w-1/3 max-w-[88px] below393:w-[30%] whitespace-nowrap overflow-hidden`}>
                   {format(item.date, 'MMM yyyy')}
                 </Text.SubtitleOne>
                 <Text.SubtitleOne
-                  css={tw`text-my-white max393:w-[70%] whitespace-nowrap overflow-hidden`}>
+                  css={tw`text-my-white below393:w-[70%] whitespace-nowrap overflow-hidden`}>
                   {item.description}
                 </Text.SubtitleOne>
               </div>

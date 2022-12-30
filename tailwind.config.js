@@ -42,19 +42,17 @@ module.exports = {
         'vue-green': '#43B882',
       },
       screens: {
-        min1280: {min: '1280px'},
-        min768: {min: '768px'},
-        min512: {min: '512px'},
-        max393: {max: '393px'},
+        // above
+        above1440: {min: '1440px'},
+        above1280: {min: '1280px'},
+        above512: {min: '512px'},
+
+        // below
+        below1280: {max: '1279px'},
+        below393: {max: '392px'},
       },
       animation: {
         'spin-slow': 'spin 3s linear infinite',
-      },
-      spacing: {
-        v360p: '40rem',
-        h360p: '22.5rem',
-        vhd: '80rem',
-        hhd: '45rem',
       },
       boxShadow: {
         neu: '4px 4px 0px rgba(16, 24, 32, 1)',

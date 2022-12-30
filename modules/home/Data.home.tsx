@@ -1,7 +1,8 @@
 import tw, {TwStyle} from 'twin.macro';
 import {Logo} from 'components/atoms';
 
-export const imgUrl = 'https://res.cloudinary.com/dox0nkwax/image/upload';
+export const imgUrl: string =
+  'https://res.cloudinary.com/dox0nkwax/image/upload';
 
 export type Project = {
   bgColor: TwStyle;
