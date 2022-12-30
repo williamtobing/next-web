@@ -1,6 +1,7 @@
 {
   "extends": "next/core-web-vitals",
   "rules": {
-    "react/no-unknown-property": ["error", {"ignore": ["tw", "css"]}]
+    "react/no-unknown-property": ["error", {"ignore": ["tw", "css"]}],
+    "no-unused-vars": "warn"
   }
 }
