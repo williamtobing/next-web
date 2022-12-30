@@ -41,7 +41,7 @@ const Home: React.FC = () => {
               </Text.HeadlineThree>
             </div>
             <div
-              css={tw`hidden above1280:(flex justify-center items-center gap-10 mt-6 mr-12 w-1/2)`}>
+              css={tw`hidden above1280:(flex justify-center items-center gap-10 mt-6 mr-[60px] w-1/2)`}>
               {navOptions
                 .filter((item) => item.value !== '/')
                 .map((item, i) => (
@@ -64,11 +64,39 @@ const Home: React.FC = () => {
           <div>
             <Illustration.IPhone14Pro />
           </div>
-          <div css={tw`w-full mt-10 mx-12`}>
+          <div css={tw`w-full mt-10 ml-6 overflow-hidden`}>
             <Roles />
             <div css={tw`mt-8`}>
               <Illustration.Vector197 css={tw`w-[680px] h-[72px] mx-auto`} />
             </div>
+            <Text.HeadlineThree css={tw`mt-6 mb-3`}>
+              Recent projects
+            </Text.HeadlineThree>
+            <Splide
+              tag="div"
+              options={{
+                perPage: 1,
+                perMove: 1,
+                rewind: false,
+                autoplay: false,
+                arrows: false,
+                autoWidth: true,
+                pauseOnHover: false,
+                type: 'loop',
+                gap: '1rem',
+              }}>
+              {projectData.map((item, i) => (
+                <SplideSlide style={{paddingBottom: '0.25rem'}} key={i}>
+                  <NeuBox.Base
+                    css={[
+                      tw`flex justify-center items-center min-w-[160px] h-[160px] shadow-neu-wide border-[5px]`,
+                      item.bgColor,
+                    ]}>
+                    {item.logo}
+                  </NeuBox.Base>
+                </SplideSlide>
+              ))}
+            </Splide>
           </div>
         </Layout.Section>
 

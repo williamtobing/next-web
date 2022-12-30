@@ -8,7 +8,7 @@ import {
 } from '@heroicons/react/24/outline';
 import {Text, NeuBox} from 'components/atoms';
 
-const RolesContainer = tw.div`flex gap-2 mb-2 above1280:(gap-5 mb-5)`;
+const RolesContainer = tw.div`flex gap-2 mb-2 above1280:(gap-5 mb-5 mr-2)`;
 
 const Roles: React.FC = () => {
   return (
