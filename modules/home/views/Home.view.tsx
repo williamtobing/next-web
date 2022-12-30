@@ -1,6 +1,7 @@
 import React, {useCallback, useState} from 'react';
 import tw from 'twin.macro';
-import {Text, Layout, Icon, NeuBox} from 'components/atoms';
+import Link from 'next/link';
+import {Text, Layout, Icon, NeuBox, Illustration} from 'components/atoms';
 import {Sidebar} from 'components/molecules';
 import {navOptions} from 'components/molecules/Sidebar/Data.sidebar';
 import {Roles, Stacks} from '../components';
@@ -40,12 +41,16 @@ const Home: React.FC = () => {
               </Text.HeadlineThree>
             </div>
             <div
-              css={tw`flex justify-center items-center gap-10 w-1/2 below1280:(hidden)`}>
+              css={tw`hidden above1280:(flex justify-center items-center gap-10 mt-6 mr-12 w-1/2)`}>
               {navOptions
                 .filter((item) => item.value !== '/')
                 .map((item, i) => (
                   <div key={i}>
-                    <Icon.Folder css={tw`w-[92.72px] h-[67px]`} />
+                    <Link href={item.value} passHref>
+                      <Icon.Folder
+                        css={tw`w-[92.72px] h-[67px] cursor-pointer`}
+                      />
+                    </Link>
                     <Text.SubtitleOne css={tw`text-center mt-2`}>
                       {item.label}
                     </Text.SubtitleOne>
@@ -55,64 +60,80 @@ const Home: React.FC = () => {
           </div>
         </Layout.Section>
 
-        <Layout.Section>
-          <Roles />
+        <Layout.Section css={tw`hidden above1280:(flex mt-2)`}>
+          <div>
+            <Illustration.IPhone14Pro />
+          </div>
+          <div css={tw`w-full mt-10 mx-12`}>
+            <Roles />
+            <div css={tw`mt-8`}>
+              <Illustration.Vector197 css={tw`w-[680px] h-[72px] mx-auto`} />
+            </div>
+          </div>
         </Layout.Section>
 
-        <Layout.Section>
-          <Text.HeadlineThree css={tw`mt-6 mb-3`}>
-            Recent projects
-          </Text.HeadlineThree>
-        </Layout.Section>
+        <div css={tw`above1280:hidden`}>
+          <Layout.Section>
+            <Roles />
+          </Layout.Section>
 
-        <Layout.Section>
-          <Splide
-            tag="div"
-            options={{
-              perPage: 1,
-              perMove: 1,
-              rewind: false,
-              autoplay: false,
-              arrows: false,
-              autoWidth: true,
-              pauseOnHover: false,
-              type: 'loop',
-              gap: '0.75rem',
-            }}>
-            {projectData.map((item, i) => (
-              <SplideSlide style={{paddingBottom: '0.25rem'}} key={i}>
-                <NeuBox.Base
-                  css={[
-                    tw`flex justify-center items-center min-w-[100px] h-[100px]`,
-                    item.bgColor,
-                  ]}>
-                  {item.logo}
-                </NeuBox.Base>
-              </SplideSlide>
+          <Layout.Section>
+            <Text.HeadlineThree css={tw`mt-6 mb-3`}>
+              Recent projects
+            </Text.HeadlineThree>
+          </Layout.Section>
+
+          <Layout.Section>
+            <Splide
+              tag="div"
+              options={{
+                perPage: 1,
+                perMove: 1,
+                rewind: false,
+                autoplay: false,
+                arrows: false,
+                autoWidth: true,
+                pauseOnHover: false,
+                type: 'loop',
+                gap: '0.75rem',
+              }}>
+              {projectData.map((item, i) => (
+                <SplideSlide style={{paddingBottom: '0.25rem'}} key={i}>
+                  <NeuBox.Base
+                    css={[
+                      tw`flex justify-center items-center min-w-[100px] h-[100px]`,
+                      item.bgColor,
+                    ]}>
+                    {item.logo}
+                  </NeuBox.Base>
+                </SplideSlide>
+              ))}
+            </Splide>
+          </Layout.Section>
+
+          <Layout.Section>
+            <Text.HeadlineThree css={tw`mt-1 mb-3`}>
+              Timeline
+            </Text.HeadlineThree>
+          </Layout.Section>
+
+          <Layout.Section>
+            {timelineData.map((item, i) => (
+              <NeuBox.Base css={tw`bg-portage mb-3`} key={i}>
+                <div css={tw`flex px-[18px] below393:px-3 py-3`}>
+                  <Text.SubtitleOne
+                    css={tw`text-chalky w-1/3 max-w-[88px] below393:w-[30%] whitespace-nowrap overflow-hidden`}>
+                    {format(item.date, 'MMM yyyy')}
+                  </Text.SubtitleOne>
+                  <Text.SubtitleOne
+                    css={tw`text-my-white below393:w-[70%] whitespace-nowrap overflow-hidden`}>
+                    {item.description}
+                  </Text.SubtitleOne>
+                </div>
+              </NeuBox.Base>
             ))}
-          </Splide>
-        </Layout.Section>
-
-        <Layout.Section>
-          <Text.HeadlineThree css={tw`mt-1 mb-3`}>Timeline</Text.HeadlineThree>
-        </Layout.Section>
-
-        <Layout.Section>
-          {timelineData.map((item, i) => (
-            <NeuBox.Base css={tw`bg-portage mb-3`} key={i}>
-              <div css={tw`flex px-[18px] below393:px-3 py-3`}>
-                <Text.SubtitleOne
-                  css={tw`text-chalky w-1/3 max-w-[88px] below393:w-[30%] whitespace-nowrap overflow-hidden`}>
-                  {format(item.date, 'MMM yyyy')}
-                </Text.SubtitleOne>
-                <Text.SubtitleOne
-                  css={tw`text-my-white below393:w-[70%] whitespace-nowrap overflow-hidden`}>
-                  {item.description}
-                </Text.SubtitleOne>
-              </div>
-            </NeuBox.Base>
-          ))}
-        </Layout.Section>
+          </Layout.Section>
+        </div>
 
         <Layout.Section>
           <Text.HeadlineThree css={tw`mt-6 mb-3`}>

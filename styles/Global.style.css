@@ -11,7 +11,7 @@
   }
 
   #__next {
-    @apply bg-my-white below1280:max-w-lg mx-auto overflow-hidden;
+    @apply bg-my-white max-w-lg above1280:max-w-none mx-auto overflow-hidden;
   }
 
   h1,

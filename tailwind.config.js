@@ -48,7 +48,6 @@ module.exports = {
         above512: {min: '512px'},
 
         // below
-        below1280: {max: '1279px'},
         below393: {max: '392px'},
       },
       animation: {
@@ -56,6 +55,7 @@ module.exports = {
       },
       boxShadow: {
         neu: '4px 4px 0px rgba(16, 24, 32, 1)',
+        'neu-wide': '6px 6px 0px rgba(16, 24, 32, 1)',
       },
     },
   },

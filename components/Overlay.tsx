@@ -8,17 +8,15 @@ const Overlay: React.FC = () => {
     <div
       css={[
         true
-          ? tw`fixed bottom-0 w-full bg-daisy-bush/75 above512:max-w-lg flex flex-col z-10`
+          ? tw`fixed bottom-0 w-full bg-daisy-bush/75 max-w-lg above1280:max-w-none flex flex-col z-10`
           : tw`hidden`,
       ]}>
-      {/* disable responsive temporary */}
-      {/* <div css={tw`flex justify-center md:justify-end animate-pulse`}> */}
       <div css={tw`flex justify-center py-1.5 animate-pulse`}>
-        <BeakerIcon css={tw`h-6 w-6 mx-2 text-my-white`} />
+        <BeakerIcon css={tw`h-6 w-6 above1280:(h-8 w-8) mx-2 text-my-white`} />
         <Text.CaptionHead css={tw`text-my-white tracking-widest mt-[2.5px]`}>
           Revamp in progress...
         </Text.CaptionHead>
-        <BeakerIcon css={tw`h-6 w-6 mx-2 text-my-white`} />
+        <BeakerIcon css={tw`h-6 w-6 above1280:(h-8 w-8) mx-2 text-my-white`} />
       </div>
     </div>
   );
