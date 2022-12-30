@@ -22,7 +22,7 @@ const Home: React.FC = () => {
         isOpen={isSidebarOpen}
         onClickOutside={handleSidebarVisibility}
       />
-      <Layout.Page css={tw`z-0`}>
+      <Layout.Page>
         <Layout.Section css={tw`relative`}>
           <span onClick={() => setSidebarOpen(true)}>
             <Icon.NavSetting css={tw`absolute top-1 right-5 cursor-pointer`} />
