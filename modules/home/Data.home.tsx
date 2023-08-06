@@ -1,7 +1,8 @@
 import tw, {TwStyle} from 'twin.macro';
 import {Logo} from 'components/atoms';
 
-export const imgUrl = 'https://res.cloudinary.com/dox0nkwax/image/upload';
+export const imgUrl: string =
+  'https://res.cloudinary.com/dox0nkwax/image/upload';
 
 export type Project = {
   bgColor: TwStyle;
@@ -11,24 +12,24 @@ export type Project = {
 export const projectData: Project[] = [
   {
     bgColor: tw`bg-kupon-blue`,
-    logo: <Logo.PintapKupon />,
+    logo: <Logo.PintapKupon css={tw`above1280:(h-24 w-24)`} />,
   },
   {
     bgColor: tw`bg-retail-blue`,
-    logo: <Logo.PintapRetail css={tw`mt-1.5`} />,
+    logo: <Logo.PintapRetail css={tw`mt-1.5 above1280:(h-24 w-24)`} />,
   },
   {
     bgColor: tw`bg-mitra-white`,
-    logo: <Logo.PintapMitra />,
+    logo: <Logo.PintapMitra css={tw`above1280:(h-24 w-24)`} />,
   },
   {
     bgColor: tw`bg-axiata-blue`,
-    logo: <Logo.XLAxiataBusol />,
+    logo: <Logo.XLAxiataBusol css={tw`above1280:(h-32 w-32)`} />,
   },
 
   {
     bgColor: tw`bg-white`,
-    logo: <Logo.XLAxiata />,
+    logo: <Logo.XLAxiata css={tw`above1280:(h-32 w-32)`} />,
   },
 ];
 
