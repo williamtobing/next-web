@@ -23,7 +23,7 @@ const Footer: React.FC = () => {
           <Icon.Github />
         </div>
       </FooterContainer>
-      <CopyrightContainer css={tw`pt-2.5 pb-12`}>
+      <CopyrightContainer css={tw`pt-2.5 pb-12 above1280:pb-14`}>
         <Text.CaptionHead css={tw`text-my-white text-center`}>
           Copyright © 2023 | William Suarez Lumbantobing
         </Text.CaptionHead>

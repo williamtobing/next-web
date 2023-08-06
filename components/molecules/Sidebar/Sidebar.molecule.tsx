@@ -11,7 +11,7 @@ type Props = {
 };
 
 const NavOverlay = tw.div`fixed w-full h-full bg-bunker/50 z-20`;
-const navStyle = tw`fixed bg-portage w-[80%] max-w-[512px] border-l-4 border-bunker h-full duration-500 ease-out z-30`;
+const navStyle = tw`fixed bg-portage w-[80%] max-w-lg border-l-4 border-bunker h-full duration-500 ease-out z-30`;
 
 const Sidebar: React.FC<Props> = ({isOpen, onClickOutside}) => {
   const [path, setPath] = useState<string>();
