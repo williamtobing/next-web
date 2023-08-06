@@ -19,8 +19,22 @@ const Footer: React.FC = () => {
         </Text.CaptionHead>
         <Text.CaptionHead css={tw`text-my-white`}>William S L</Text.CaptionHead>
         <div css={tw`flex justify-end -mt-9`}>
-          <Icon.LinkedIn css={tw`mr-1.5`} />
-          <Icon.Github />
+          <a
+            href="https://www.linkedin.com/in/williamtobing/"
+            target="_blank"
+            rel="noopener noreferrer">
+            <span className="cursor-pointer">
+              <Icon.LinkedIn css={tw`mr-1.5`} />
+            </span>
+          </a>
+          <a
+            href="https://github.com/williamtobing"
+            target="_blank"
+            rel="noopener noreferrer">
+            <span className="cursor-pointer">
+              <Icon.Github />
+            </span>
+          </a>
         </div>
       </FooterContainer>
       <CopyrightContainer css={tw`pt-2.5 pb-12 above1280:pb-14`}>

@@ -17,11 +17,14 @@ const About: React.FC = () => {
         onClickOutside={handleSidebarVisibility}
       />
       <Layout.Page>
-        <Layout.Section css={tw`relative`}>
-          <span onClick={() => setSidebarOpen(true)}>
-            <Icon.NavSetting css={tw`absolute top-1 right-5 cursor-pointer`} />
-          </span>
+        <Layout.Section>
+          <div
+            css={tw`float-right cursor-pointer`}
+            onClick={() => setSidebarOpen(true)}>
+            <Icon.NavSetting />
+          </div>
         </Layout.Section>
+
         <Layout.Section css={tw`flex justify-center items-center pt-2 pb-8`}>
           <div
             css={tw`bg-daisy-bush p-1 rounded-full animate-[spin_200s_linear_infinite]`}>
@@ -30,25 +33,21 @@ const About: React.FC = () => {
         </Layout.Section>
 
         <Layout.Section css={tw`flex justify-center items-center pb-8`}>
-          <div css={tw`inline-block p-1`}>
+          <div css={tw`inline-block p-1 space-y-2`}>
             <Logo.TheLogoTwo css={tw`hidden`} />
-            <Text.SubtitleOne css={tw`mb-2`}>
-              About Temporary Page
-            </Text.SubtitleOne>
+            <Text.SubtitleOne>About Temporary Page</Text.SubtitleOne>
             <Text.Caption>
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo
               aliquam voluptas cumque ab ea eveniet aperiam quibusdam cum quidem
               nesciunt odio ipsa, dolore quasi exercitationem vel tempora, quia
               atque quod.
             </Text.Caption>
-            <br />
             <Text.Caption>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
               modi voluptatibus ad delectus id cum veniam eos quo aspernatur
               eaque natus fugiat architecto, quaerat enim ducimus voluptas quia
               nisi sapiente!
             </Text.Caption>
-            <br />
             <Text.Caption>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos
               quisquam quos architecto, ullam nemo natus perferendis asperiores

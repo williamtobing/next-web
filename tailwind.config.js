@@ -42,9 +42,13 @@ module.exports = {
         'vue-green': '#43B882',
       },
       screens: {
-        // above
-        above1440: {min: '1440px'},
-        above1280: {min: '1280px'},
+        // ?: above
+        // TODO: disable desktop
+        // above1440: {min: '1440px'},
+        // above1280: {min: '1280px'},
+        // above512: {min: '512px'},
+        above1440: {min: '2560px'},
+        above1280: {min: '2560px'},
         above512: {min: '512px'},
 
         // below

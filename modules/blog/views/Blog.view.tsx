@@ -17,10 +17,12 @@ const Blog: React.FC = () => {
         onClickOutside={handleSidebarVisibility}
       />
       <Layout.Page>
-        <Layout.Section css={tw`relative`}>
-          <span onClick={() => setSidebarOpen(true)}>
-            <Icon.NavSetting css={tw`absolute top-1 right-5 cursor-pointer`} />
-          </span>
+        <Layout.Section>
+          <div
+            css={tw`float-right cursor-pointer`}
+            onClick={() => setSidebarOpen(true)}>
+            <Icon.NavSetting />
+          </div>
         </Layout.Section>
         <Layout.Section css={tw`flex justify-center items-center pt-2 pb-8`}>
           <div
@@ -30,25 +32,21 @@ const Blog: React.FC = () => {
         </Layout.Section>
 
         <Layout.Section css={tw`flex justify-center items-center pb-8`}>
-          <div css={tw`inline-block p-1`}>
+          <div css={tw`inline-block p-1 space-y-2`}>
             <Logo.TheLogoTwo css={tw`hidden`} />
-            <Text.SubtitleOne css={tw`mb-2`}>
-              Blog Temporary Page
-            </Text.SubtitleOne>
+            <Text.SubtitleOne>Blog Temporary Page</Text.SubtitleOne>
             <Text.Caption>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit.
               Repudiandae laudantium quidem consequatur illum recusandae vitae
               provident delectus, ullam possimus. Tempore ipsam velit rem sed!
               Ipsa quidem autem molestiae dolorum ex!
             </Text.Caption>
-            <br />
             <Text.Caption>
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Doloremque architecto alias fugiat ratione? Voluptatum dolore,
               veniam fugiat nulla iste quod autem neque esse eius. Ipsa tempore
               labore facilis nemo laborum.
             </Text.Caption>
-            <br />
             <Text.Caption>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
               quo magni fugit eum velit ex numquam, rerum officiis dolor
