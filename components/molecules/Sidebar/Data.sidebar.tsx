@@ -17,5 +17,4 @@ export const navOptions: NavOption[] = [
     label: 'Blog',
     value: '/blog',
   },
-  {label: 'Contact', value: '#'},
 ];
