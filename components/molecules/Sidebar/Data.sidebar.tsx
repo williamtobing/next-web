@@ -17,5 +17,5 @@ export const navOptions: NavOption[] = [
     label: 'Blog',
     value: '/blog',
   },
-  {label: 'Contact', value: '#'},
+  {label: 'Contact', value: 'mailto:william.sl.tobing@gmail.com'},
 ];

@@ -41,6 +41,11 @@ export type Timeline = {
 
 export const timelineData: Timeline[] = [
   {
+    date: new Date('2023-02'),
+    description: 'Frontend Engineer at Juragan Material',
+    progress: 0.75,
+  },
+  {
     date: new Date('2022-02'),
     description: 'Frontend Engineer at Pintap',
     progress: 0.75,
