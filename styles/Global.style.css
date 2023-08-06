@@ -11,7 +11,7 @@
   }
 
   #__next {
-    @apply bg-my-white max-w-lg mx-auto overflow-hidden;
+    @apply bg-my-white max-w-lg above1280:max-w-none mx-auto overflow-hidden;
   }
 
   h1,
@@ -36,11 +36,11 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  @apply bg-mirage/50;
+  @apply bg-daisy-bush/75;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  @apply bg-daisy-bush/50;
+  @apply bg-portage/50;
 }
 
 /* SELECTION */

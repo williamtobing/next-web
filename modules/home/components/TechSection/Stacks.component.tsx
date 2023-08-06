@@ -30,7 +30,7 @@ const Stacks: React.FC = () => {
       {techStackData.map((item, i) => (
         <SplideSlide style={{paddingBottom: '0.25rem'}} key={i}>
           <a href={item.link} target="_blank" rel="noopener noreferrer">
-            <NeuBox.Base css={[SliderBoxStyle, tw`min512:hidden`]}>
+            <NeuBox.Base css={[SliderBoxStyle, tw`above512:hidden`]}>
               <SliderContentBox>
                 <Image
                   src={item.source}
@@ -47,7 +47,7 @@ const Stacks: React.FC = () => {
             </NeuBox.Base>
 
             <NeuBox.Base
-              css={[SliderBoxStyle, item.neuStyle, tw`hidden min512:flex`]}>
+              css={[SliderBoxStyle, item.neuStyle, tw`hidden above512:flex`]}>
               <SliderContentBox css={[item.contentBoxStyle]}>
                 <Image
                   src={item.source}
