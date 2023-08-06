@@ -26,7 +26,10 @@ const Home: React.FC = () => {
       />
       <Layout.Page>
         <Layout.Section css={tw`relative`}>
-          <span onClick={() => setSidebarOpen(true)} css={tw`above512:hidden`}>
+          <span
+            onClick={() => setSidebarOpen(true)}
+            // css={tw`above512:hidden`}
+          >
             <Icon.NavSetting css={tw`absolute top-1 right-5 cursor-pointer`} />
           </span>
           <div css={tw`flex w-full`}>
@@ -41,7 +44,10 @@ const Home: React.FC = () => {
               </Text.HeadlineThree>
             </div>
             <div
-              css={tw`hidden above1280:(flex justify-center items-center gap-10 mt-6 mr-[60px] w-1/2)`}>
+              css={[
+                tw`hidden`,
+                tw`above1280:(flex justify-center items-center gap-10 mt-6 mr-[60px] w-1/2)`,
+              ]}>
               {navOptions
                 .filter((item) => item.value !== '/')
                 .map((item, i) => (
@@ -51,9 +57,12 @@ const Home: React.FC = () => {
                         css={tw`w-[92.72px] h-[67px] cursor-pointer`}
                       />
                     </Link>
-                    <Text.SubtitleOne css={tw`text-center mt-2`}>
-                      {item.label}
-                    </Text.SubtitleOne>
+                    <Link href={item.value} passHref>
+                      <Text.SubtitleOne
+                        css={tw`text-center mt-2 cursor-pointer`}>
+                        {item.label}
+                      </Text.SubtitleOne>
+                    </Link>
                   </div>
                 ))}
             </div>
@@ -150,11 +159,11 @@ const Home: React.FC = () => {
               <NeuBox.Base css={tw`bg-portage mb-3`} key={i}>
                 <div css={tw`flex px-[18px] below393:px-3 py-3`}>
                   <Text.SubtitleOne
-                    css={tw`text-chalky w-1/3 max-w-[88px] below393:w-[30%] whitespace-nowrap overflow-hidden`}>
+                    css={tw`text-chalky w-1/3 max-w-[88px] below393:w-[30%] overflow-hidden`}>
                     {format(item.date, 'MMM yyyy')}
                   </Text.SubtitleOne>
                   <Text.SubtitleOne
-                    css={tw`text-my-white below393:w-[70%] whitespace-nowrap overflow-hidden`}>
+                    css={tw`text-my-white below393:w-[70%] overflow-x-auto`}>
                     {item.description}
                   </Text.SubtitleOne>
                 </div>
